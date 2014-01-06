@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#hamburger").click(function(){
-    $( "#the_more_div").slideToggle('slow');
+    $( "#the_more_div").slideToggle('slow', 'swing');
   });
 });
 

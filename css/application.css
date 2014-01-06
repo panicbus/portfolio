@@ -1,6 +1,10 @@
 
 html {
-  margin: -8px 0 0 -1px;
+  margin: -8px -8px 0 -8px;
+}
+
+body {
+  margin: 0;
 }
 
 li {
@@ -23,17 +27,20 @@ a:hover {
   color: #333333;
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
+  padding-bottom:
   /*text-align: center;*/
 }
 
 .nameDiv {
   text-align: center;
   margin-bottom: 15px;
+  padding-top: 15px;
 }
 
 .nameDiv img {
   height: 125px;
   border-radius: 100px;
+  margin-top: 10px;
 }
 
 #hamburger {
@@ -48,12 +55,13 @@ a:hover {
 .sidebar {
   float: left;
   background-color: #7f8c8d;
-  width: 22%;
+  width: 23%;
   position: fixed;
   height: 100%;
   padding: 10px 20px 0 20px;
   font-family: 'Raleway', sans-serif;
   overflow: scroll;
+  border: 0;
 }
 
 .links  {
@@ -119,21 +127,10 @@ a:link, a:visited, a:active, h1:hover {
 
 /*content elements*/
 
-#entry_div {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#because_div {
-  margin-top: 15%;
+#because {
   width: 100%;
   margin-left: 14%;
-  background-color: none;
-  position: relative;
-}
-
-#because {
-  /*width: 100%;*/
+  margin-bottom: 0;
   letter-spacing: 15px;
   color: #333333;
   font-family: 'Domine';
@@ -142,30 +139,32 @@ a:link, a:visited, a:active, h1:hover {
 }
 
 #laptop_div {
-  /*margin-right: auto;*/
-  margin: -30px 0 0 42%;
+  margin: 0 0 0 38%;
   background-color: none;
   position: relative;
+  color: #333333
 }
 
-.main {
-  float: left;
+#main {
+  width: 68%;
+  float: right;
   /*position: absolute;*/
   background-color: #408AD2;
-  margin-left: 25%;
-  height: 100%;
+  margin-left: 0%;
   padding: 10px 50px 20px 50px;
   font-family: 'Raleway';
   font-size: 22px;
-
+  height: 700px;
+  clear: both;
+  overflow: hidden;
 }
 
 .portfolio, .about, .work {
   float: left;
-  /*position: absolute;*/
+  position: absolute;
   background-color: #408AD2;
-  margin-left: 25%;
-  padding: 10px 50px 20px 50px;
+  margin-left: 24%;
+  padding: 20px 50px 20px 50px;
   font-family: 'Raleway';
   font-size: 22px;
 }
@@ -176,6 +175,11 @@ a:link, a:visited, a:active, h1:hover {
 
 .linedrop {
   margin-left: 20px;
+}
+
+.linedrop:hover {
+  color: #2287B5;
+  transition: background-color 0.3s ease;
 }
 
 @media (max-width: 460px) {
