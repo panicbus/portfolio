@@ -9,15 +9,17 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#hamburger").click(function(){
-    $( "#the_more_div").slideToggle('slow', 'swing');
+    $( "#the_more_div").slideToggle('slow');
   });
 });
 
 
 $(function(){
-  var menuItems = $('.links li').click(function(){
+  var menuItems = $('.links li').on('click', function(){
+    console.log(menuItems);
     menuItems.removeClass('current');
     $(this).addClass('current');
+    console.log(this);
   });
 });
 

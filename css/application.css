@@ -11,6 +11,10 @@ li {
   list-style-type: none;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 .social a, .portfolio a, .about a, .work a, .nameDiv a {
   transition: all 0.3s ease;
   text-decoration: none;
@@ -57,10 +61,10 @@ li {
   /*background-size: contain;*/
   /*background-repeat: no-repeat;*/
   background-color: #7f8c8d;
-  width: 23%;
+  width: 24%;
   position: fixed;
   height: 100%;
-  padding: 10px 20px 0 20px;
+  padding: 10px 0 0 0;
   font-family: 'Raleway', sans-serif;
   overflow: scroll;
   border: 0;
