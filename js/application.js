@@ -14,6 +14,14 @@ $(document).ready(function(){
 });
 
 
+$(function(){
+  var menuItems = $('.links li').click(function(){
+    menuItems.removeClass('current');
+    $(this).addClass('current');
+  });
+});
+
+
 // $(document).ready ->
 //   $(".main").css "display", "none"
 //   $(".main").fadeIn(500)
