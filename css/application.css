@@ -36,7 +36,8 @@ h2 {
   color: #333333;
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
-  padding-bottom:
+  padding-bottom;
+  cursor: pointer;
 }
 
 .nameDiv {

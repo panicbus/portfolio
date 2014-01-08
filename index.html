@@ -16,7 +16,7 @@
   <!-- static sidebar -->
 <div class="sidebar">
   <div class="nameDiv">
-    <a class="myName" onclick="showdiv('splash');">Nico Crisafulli</a><br>
+    <a class="myName splash">Nico Crisafulli</a><br>
     <img class="img_nico tilt" src="img/nico.jpg">
   </div>
 
@@ -26,9 +26,9 @@
   <div id='the_more_div'>
     <div class="links">
       <ul>
-        <li class="about" onclick="showdiv('about');">About</li>
-        <li class="work" onclick="showdiv('work');">Work</li>
-        <li class="photos" onclick="showdiv('photos');">Photos</li>
+        <li id="about-link" class="about view-options" >About</li>
+        <li id="work-link" class="work view-options" >Work</li>
+        <li id="photos-link" class="photos view-options" >Photos</li>
       </ul>
     </div>
   </div>
@@ -42,14 +42,14 @@
 <!-- <div class="clearBoth"></div> -->
 </div>
 
-<div id="splash">
+<div id="splash" class="nico-view">
     <p id="because">Because.</p>
   <div id="laptop_div">
     <i id="laptop" class="fa fa-laptop fa-5x"></i>
   </div>
 </div>
 
-<div id="about">
+<div id="about" class="nico-view">
  <i class="fa fa-thumbs-o-up fa-3x"></i>
   <p>Ahoy hoy!</p>
   <img style="height: 350px; float: right; margin: 10px" src="img/box.jpg">
@@ -66,7 +66,7 @@
   </div>
 </div>
 
-<div id="work">
+<div id="work" class="nico-view">
   <i class="fa fa-code fa-3x"></i>
   <p>A sampling of some of the work I've done while building my coding skills at General Assembly's WDI course:</p>
   <a href="http://bandhub.herokuapp.com/" target="_blank"><h2>BandHub</h2></a>
@@ -90,7 +90,7 @@
   <p>WiFly is a web app that allows you to search for airports around the world to see if there is an available WiFi signal, if it's free and if it's not, how much it costs to use. Data is crowdsourced. Currently in alpha.</p>
 </div>
 
-<div id="photos">
+<div id="photos" class="nico-view">
   <i class="fa fa-camera-retro fa-3x"></i>
 
   <p>Sample photos taken over the past few years:
