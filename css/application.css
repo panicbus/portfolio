@@ -15,12 +15,16 @@ ul {
   margin-bottom: 0;
 }
 
-.social a, .portfolio a, .about a, .work a, .nameDiv a {
+h2 {
+  font-size: 36px;
+}
+
+.social a, #photos a, #about a, #work a, .nameDiv a {
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
-.social a:hover, .portfolio a:hover, .about a:hover, .work a:hover, .nameDiv a:hover {
+.social a:hover, #photos a:hover, #about a:hover, #work a:hover, .nameDiv a:hover {
   color: #2287B5;
   text-decoration: none;
 }
@@ -47,6 +51,22 @@ ul {
   margin-top: 10px;
 }
 
+.tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.tilt:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
 #hamburger {
   color: #333333;
   margin-left: 43%;;
@@ -70,17 +90,18 @@ ul {
   border: 0;
 }
 
-.sidebar a{
+.sidebar a {
   text-decoration: none;
 }
 .sidebar_image {
   position: absolute;
 }
 
-.links  {
+.links {
   font-size: 20px;
   text-align: center;
   margin-left: -43px;
+  cursor: pointer;
 }
 
 .clearBoth {
@@ -91,7 +112,7 @@ a:link, a:visited, a:active, h1:hover {
   color: #333333;
 }
 
-.main a:hover, .sidebar a:hover {
+#splash a:hover, .sidebar a:hover {
    text-decoration: none;
 }
 
@@ -109,6 +130,7 @@ a:link, a:visited, a:active, h1:hover {
   text-decoration: none;
 }
 
+/*for persistant active link*/
 .links li.current {
   background-color: #ecf0f1;
 }
@@ -144,8 +166,8 @@ a:link, a:visited, a:active, h1:hover {
   color: #333333
 }
 
-#main {
-  width: 68%;
+#splash {
+  width: 70%;
   float: right;
   /*position: absolute;*/
   background-color: #408AD2;
@@ -158,7 +180,7 @@ a:link, a:visited, a:active, h1:hover {
   overflow: hidden;
 }
 
-.portfolio, .about, .work {
+#photos, #about, #work {
   float: left;
   position: absolute;
   background-color: #408AD2;
@@ -192,7 +214,7 @@ a:link, a:visited, a:active, h1:hover {
     float: none;
   }
 
-  .portfolio, .about, .work, .main {
+  #photos, #about, #work, #splash {
     width: 100%;
   }
 
