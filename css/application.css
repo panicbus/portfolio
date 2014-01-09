@@ -127,13 +127,13 @@ a:link, a:visited, a:active, h1:hover {
 }
 
 .links li:hover {
-  background-color: #ecf0f1;
+  background-color: #408AD2;
   text-decoration: none;
 }
 
 /*for persistant active link*/
 .links li.current {
-  background-color: #ecf0f1;
+  background-color: #408AD2;
 }
 
 .social li {
