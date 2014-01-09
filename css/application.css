@@ -38,6 +38,7 @@ h2 {
   font-size: 50px;
   padding-bottom;
   cursor: pointer;
+  letter-spacing: 6px;
 }
 
 .nameDiv {
@@ -79,8 +80,6 @@ h2 {
 
 .sidebar {
   float: left;
-  /*background-size: contain;*/
-  /*background-repeat: no-repeat;*/
   background-color: #7f8c8d;
   width: 24%;
   position: fixed;
@@ -103,10 +102,6 @@ h2 {
   text-align: center;
   margin-left: -43px;
   cursor: pointer;
-}
-
-.clearBoth {
-  clear: both;
 }
 
 a:link, a:visited, a:active, h1:hover {
@@ -170,13 +165,12 @@ a:link, a:visited, a:active, h1:hover {
 #splash {
   width: 70%;
   float: right;
-  /*position: absolute;*/
   background-color: #408AD2;
   margin-left: 0%;
   padding: 10px 50px 20px 50px;
   font-family: 'Raleway';
   font-size: 22px;
-  height: 700px;
+  height: 650px;
   clear: both;
   overflow: hidden;
 }
@@ -204,15 +198,46 @@ a:link, a:visited, a:active, h1:hover {
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 460px) {
+
+@media (min-width: 481px) and (max-width: 800px) {
 
   .myName {
-    font-size: 25px;
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+
+  .name_div img {
+    height: 115px;
+  }
+
+  #hamburger {
+    margin-left: 37%;
+  }
+
+  #because {
+    font-size: 75px;
+  }
+
+  #laptop_div {
+    font-size: 21px;
+    margin-left: 45%;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .myName {
+    font-size: 40px;
+    letter-spacing: 4px;
   }
 
   .sidebar {
-    width: 100%;
+    width: 105%;
+    height: auto;
     float: none;
+    z-index: 1000;
+
   }
 
   #photos, #about, #work, #splash {
@@ -224,9 +249,28 @@ a:link, a:visited, a:active, h1:hover {
   }
 
   #laptop_div {
-    margin: -10px 0 0 20%;
-    zoom: -25%;
+    margin-left: 45%;
+    font-size: 10px;
   }
+
+  #photos, #about, #work, #splash {
+    float: none;
+    position: absolute;
+    width: 94%;
+    padding: 15px 15px 20px 15px;
+    font-size: 20px;
+    margin: 360px 0 0 0;
+  }
+
+  .in_a_box {
+    padding: 0px 12% 10px 10%;
+
+  }
+
+  #photos img {
+    width: 97%;
+  }
+
 }
 
 
