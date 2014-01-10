@@ -13,40 +13,39 @@
 </head>
 <body>
 
-  <!-- static sidebar -->
-<div class="sidebar">
+  <!-- static topnav -->
+<div class="topnav">
   <div class="nameDiv">
     <a class="myName splash">Nico Crisafulli</a><br>
+  </div>
+  <div class="topnav_image">
     <img class="img_nico tilt" src="img/nico.jpg">
   </div>
-
-  <!-- the links slideDown jQuery -->
-  <i id="hamburger" class="fa fa-bars fa-3x"></i>
-
-  <div id='the_more_div'>
-    <div class="links">
-      <ul>
-        <li id="about-link" class="about view-options" >About</li>
-        <li id="work-link" class="work view-options" >Work</li>
-        <li id="photos-link" class="photos view-options" >Photos</li>
-      </ul>
+  <div id="splash">
+    <p id="because">Because:</p>
+    <div id="laptop_div">
+      <i id="laptop" class="fa fa-laptop fa-5x"></i>
     </div>
   </div>
-  <hr>
-  <ul class="social">
-    <a href="http://www.github.com/panicbus" target="blank"><li><i id="soc" class="fa fa-github-alt fa-2x"></i></li></a>
-    <a href="http://www.twitter.com/10timesone" target="blank"><li><i id="soc" class="fa fa-twitter fa-2x"></i></li></a>
-    <a href="http://www.linkedin.com/in/nicocrisafulli" target="blank"><li><i id="soc" class="fa fa-linkedin-square fa-2x"></i></li></a>
-    <a href="http://stackoverflow.com/users/2526710/panicbus" target="blank"><li><i id="soc" class="fa fa-stack-overflow fa-2x"></i></li></a>
-  </ul>
 </div>
 
-<div id="splash" class="nico-view">
-    <p id="because">Because.</p>
-  <div id="laptop_div">
-    <i id="laptop" class="fa fa-laptop fa-5x"></i>
-  </div>
+<div class="links">
+  <!-- <ul> -->
+    <li id="about-link" class="about view-options">About</li>
+    <li id="work-link" class="work view-options">Work</li>
+    <li id="photos-link" class="photos view-options">Photos</li>
+    <li id="resume-link" class="resume view-options">Resume</li>
+  <!-- </ul> -->
 </div>
+
+<!-- <ul class="social">
+  <a href="http://www.github.com/panicbus" target="blank"><li><i id="soc" class="fa fa-github-alt fa-2x"></i></li></a>
+  <a href="http://www.twitter.com/10timesone" target="blank"><li><i id="soc" class="fa fa-twitter fa-2x"></i></li></a>
+  <a href="http://www.linkedin.com/in/nicocrisafulli" target="blank"><li><i id="soc" class="fa fa-linkedin-square fa-2x"></i></li></a>
+  <a href="http://stackoverflow.com/users/2526710/panicbus" target="blank"><li><i id="soc" class="fa fa-stack-overflow fa-2x"></i></li></a>
+</ul> -->
+
+
 
 <div id="about" class="nico-view">
  <i class="fa fa-thumbs-o-up fa-3x"></i>
@@ -93,7 +92,7 @@
   <i class="fa fa-camera-retro fa-3x"></i>
 
   <p>Sample photos taken over the past few years:
-  Feel free to browse my <a href="http://www.flickr.com/photos/nicocrisafulli/sets">Flickr account </a>for more.</p>
+  Feel free to browse my <a href="http://www.flickr.com/photos/nicocrisafulli/sets">Flickr account </a>for links.</p>
 
   <h3>Three Heads, Six Arms | 2010</h3>
   <img src="http://farm5.staticflickr.com/4126/4957695356_780acd3146_z.jpg" width="100%" height="auto" style="border: 8px solid #333333;" alt="Three Heads Six Arms"><br>
@@ -110,6 +109,18 @@
   <h3>Reclining Buddha | 2007</h3>
   <img src="http://farm2.staticflickr.com/1352/5181230134_5dd4d55d30_z.jpg" width="100%" height="auto" style="border: 8px solid #333333;" alt="Reclining buddha"><br>
 </div>
+
+<div id="resume" class="nico-view">
+ <i class="fa fa-paperclip fa-3x"></i>&nbsp;&nbsp;&nbsp; Jobs!
+  <p>What you've been waiting for! The goods on what I've been paid to do in the past.</p>
+  <iframe class="resume_pdf" src="https://docs.google.com/document/d/1VOpn54ATbYWKY4AyMn_3eu9J9VXZ0srWo4lRu0PS82E/pub?embedded=true"></iframe>
+
+  <p style="text-align: center">:::&nbsp;&nbsp;&nbsp; :::&nbsp;&nbsp;&nbsp; :::</p>
+  <form><input type="button" value="Download Nico's Resume as a PDF" target="_blank" onClick="window.location.href='img/resume.pdf'"></form><br>
+  <p>Want to download this? <a href="img/resume.pdf">Please feel free.</a> <em>[PDF]</em></p>
+  <p>Yeah. It's ultra-sexy.</p>
+</div>
+
 
 </body>
 </html>
