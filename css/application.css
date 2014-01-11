@@ -145,6 +145,7 @@ a:link, a:visited, a:active, h1:hover {
   padding: 10px;
   transition: all 0.3s ease;
   margin: 0 -2px 0 -4px;
+  background-color: #95a5a6;
 }
 
 
@@ -159,9 +160,26 @@ a:link, a:visited, a:active, h1:hover {
 }
 
 /*for persistant active link*/
-.links li.current {
-  background-color: #7f8c8d;
+
+.links li.about.current {
+  background-color: #16A085;
+  color: #ECF0F1;
 }
+
+.links li.work.current {
+  background-color: #2980B9;
+  color: #ECF0F1;
+}
+.links li.photos.current {
+  background-color: #E74C3C;
+  color: #ECF0F1;
+}
+
+.links li.resume.current {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+}
+
 
 .social li {
   transition: background-color 0.3s ease;
@@ -178,12 +196,37 @@ a:link, a:visited, a:active, h1:hover {
 
 
 #photos, #about, #work, #resume {
-  background-color: #408AD2;
+  /*background-color: #408AD2;*/
   padding: 150px 15px 20px 35px;
   font-family: 'Raleway';
   font-size: 22px;
   z-index: 1;
   position: relative;
+}
+
+
+#about {
+  background-color: #16A085;
+  color: #ECF0F1;
+}
+
+#work {
+  background-color: #2980B9;
+  color: #ECF0F1;
+}
+
+#photos {
+  background-color: #E74C3C;
+  color: #ECF0F1;
+}
+
+#resume {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+}
+
+#photos img {
+  width: 48 %;
 }
 
 .ga:hover {
@@ -204,6 +247,12 @@ a:link, a:visited, a:active, h1:hover {
   height: 640px;
   zoom: 1.5;
   margin-left: 13%;
+}
+
+.pdf_button {
+  margin-left: 36%;
+  position: absolute;
+  width: 300px;
 }
 
 /*see if resume inner padding is editable*/

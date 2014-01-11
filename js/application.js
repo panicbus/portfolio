@@ -5,6 +5,7 @@ $(document).ready(function(){
     $(link).addClass('current');
   }
 
+  // nico-view is the content div
   $('.nico-view').hide()
   $('#splash').show()
 
