@@ -9,32 +9,32 @@ $(document).ready(function(){
   $('#splash').show()
 
   $('body').on('click',".about", function(event) {
-    $('.nico-view').hide('slow');
-    $('#about').slideDown('slow');
+    $('.nico-view').fadeOut('slow');
+    $('#about').fadeIn('slow');
     hoverLink(this);
   })
 
   $('body').on('click',".work", function(event) {
-    $('.nico-view').hide('slow');
-    $('#work').slideDown('slow');
+    $('.nico-view').fadeOut('slow');
+    $('#work').fadeIn('slow');
     hoverLink(this);
   })
 
   $('body').on('click',".photos", function(event) {
-    $('.nico-view').hide('slow');
-    $('#photos').slideDown('slow');
-    hoverLink(this)
+    $('.nico-view').fadeOut('slow');
+    $('#photos').fadeIn('slow');
+    hoverLink(this);
   })
 
   $('body').on('click',".resume", function(event) {
-    $('.nico-view').hide('slow');
-    $('#resume').slideDown('slow');
-    hoverLink(this).hide();
+    $('.nico-view').fadeOut('slow');
+    $('#resume').fadeIn('slow');
+    hoverLink(this);
   })
 
    $('body').on('click',".splash", function(event) {
-    $('.nico-view').hide('slow');
-    $('#splash').slideDown('slow');
+    $('.nico-view').fadeOut('slow');
+    $('#splash').fadeIn('slow');
     hoverLink(this).hide();
   })
 
@@ -46,12 +46,6 @@ $(document).ready(function(){
   // function() {
   //   $(this).stop().animate({opacity: "1"}, 'slow');
   // });
-
-
-  // sidebar slide toggle
-  $("#hamburger").click(function(){
-    $( "#the_more_div").slideToggle('slow');
-  });
 
 
 });
