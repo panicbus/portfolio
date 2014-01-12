@@ -1,11 +1,15 @@
 
-html {
-  /*margin: -8px -8px 0 -8px;*/
-}
-
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  background-image:url('http://farm6.staticflickr.com/5248/5310311205_eae39040f1_b.jpg');
+  /*background-image:url('http://farm3.staticflickr.com/2451/4347642063_61c1bf1610_b.jpg');*/
+  background-color:#cccccc;
+  background-position: 0 68px;
+  /*background-position: 0 -250px;*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 li {
@@ -23,6 +27,7 @@ h2 {
 
 td {
   padding-right: 30px;
+  width: 40%;
 }
 
 .social a, #photos a, #about a, #work a, .nameDiv a {
@@ -197,7 +202,6 @@ a:link, a:visited, a:active, h1:hover {
 */
 
 /*content elements*/
-
 
 #photos, #about, #work, #resume {
   /*background-color: #408AD2;*/

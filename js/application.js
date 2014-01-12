@@ -10,26 +10,26 @@ $(document).ready(function(){
   $('#splash').show()
 
   $('body').on('click',".about", function(event) {
-    $('.nico-view').fadeOut('slow');
-    $('#about').fadeIn('slow');
+    $('.nico-view').hide('slow');
+    $('#about').slideDown('slow');
     hoverLink(this);
   })
 
   $('body').on('click',".work", function(event) {
-    $('.nico-view').fadeOut('slow');
-    $('#work').fadeIn('slow');
+    $('.nico-view').hide('slow');
+    $('#work').slideDown('slow');
     hoverLink(this);
   })
 
   $('body').on('click',".photos", function(event) {
-    $('.nico-view').fadeOut('slow');
-    $('#photos').fadeIn('slow');
+    $('.nico-view').hide('slow');
+    $('#photos').slideDown('slow');
     hoverLink(this);
   })
 
   $('body').on('click',".resume", function(event) {
-    $('.nico-view').fadeOut('slow');
-    $('#resume').fadeIn('slow');
+    $('.nico-view').hide('slow');
+    $('#resume').slideDown('slow');
     hoverLink(this);
   })
 
