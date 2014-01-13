@@ -5,7 +5,7 @@ body {
   background-image:url('http://farm6.staticflickr.com/5248/5310311205_eae39040f1_b.jpg');
   /*background-image:url('http://farm3.staticflickr.com/2451/4347642063_61c1bf1610_b.jpg');*/
   background-color:#cccccc;
-  background-position: 0 68px;
+  background-position: 0 69px;
   /*background-position: 0 -250px;*/
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -36,7 +36,7 @@ td {
 }
 
 .social a:hover, #photos a:hover, #about a:hover, #work a:hover, .nameDiv a:hover {
-  color: #2287B5;
+  color: #2F41CC;
   text-decoration: none;
 }
 
@@ -104,6 +104,7 @@ td {
 
 #splash {
   float: right;
+  height: 75px;
 }
 
 #because {
@@ -190,16 +191,35 @@ a:link, a:visited, a:active, h1:hover {
 }
 
 
-/*.social li {
-  transition: background-color 0.3s ease;
-  display: inline-block;
-  margin: 5%;
+/*photo image hover text*/
+.cover {
+  position: absolute;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(255,255,255,0);
+  text-align: center;
+  transition: all 1s linear;
 }
 
-.social a:hover {
-  color: #2287B5;
+.zoom-gallery a:hover .cover {
+  background-color: rgba(0,0,0,.8);
+  color: rgba(255,255,255,1);
+  transition: all .2s linear;
 }
-*/
+
+.zoom-gallery a:hover h3 {
+  color: red;
+}
+
+.zoom-gallery h3 {
+  font-size: 1.2em;
+}
+
+.zoom-gallery p {
+  font-size: .9em;
+}
 
 /*content elements*/
 
@@ -238,7 +258,7 @@ a:link, a:visited, a:active, h1:hover {
 }
 
 .ga:hover {
-  color: #c0392b;
+  color: #2F41CC;
 }
 
 .linedrop {
@@ -246,12 +266,12 @@ a:link, a:visited, a:active, h1:hover {
 }
 
 .linedrop:hover {
-  color: #2287B5;
+  color: #2F41CC;
   transition: background-color 0.3s ease;
 }
 
 .resume_pdf {
-  width: 600px;
+  width: 80%;
   height: 640px;
   zoom: 1.5;
   margin-left: 13%;
@@ -268,270 +288,92 @@ a:link, a:visited, a:active, h1:hover {
   padding: 40pt 50pt 50pt 100pt;
 }
 
-
-/*awesome social animation*/
-
-.csstransforms .cn-wrapper {
-  font-size:1em;
-  width: 26em;
-  height: 26em;
-  overflow: hidden;
-  position: fixed;
-  z-index: 1001;
-  bottom: -13em;
-  left: 50%;
-  border-radius: 50%;
-  margin-left: -13em;
-  transform: scale(0.1);
-  transition: all .3s ease;
-}
-/* class applied to the container via JavaScript that will scale the navigation up */
-.csstransforms .opened-nav {
-  border-radius: 50%;
-  transform: scale(1);
-}
-
-.cn-button {
-  border:none;
-  background:none;
-  color: white;
-  text-align: center;
-  font-size: 1.5em;
-  padding-bottom: 1em;
-  height: 3.5em;
-  width: 3.5em;
-  background-color: #111;
-  position: fixed;
-  left: 50%;
-  margin-left: -1.75em;
-  bottom: -1.75em;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 11
-}
-.cn-button:hover,
-.cn-button:active,
-.cn-button:focus{
-  background-color: #222;
-}
-
-.cn-overlay{
-  width:100%;
-  height:100%;
-  background-color: rgba(0,0,0,0.6);
-  position:fixed;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  opacity:0;
-  transition: all .3s ease;
-  z-index:2;
-  pointer-events:none;
-}
-
-/* Class added to the overlay via JavaScript to show it when navigation is open */
-.cn-overlay.on-overlay{
-  pointer-events:auto;
-  opacity:1;
-}
-
-
-.csstransforms .cn-wrapper li {
-  position: absolute;
-  font-size: 1.5em;
-  width: 10em;
-  height: 10em;
-  transform-origin: 100% 100%;
-  overflow: hidden;
-  left: 50%;
-  top: 50%;
-  margin-top: -1.3em;
-  margin-left: -10em;
-  transition: border .3s ease;
-}
-
-.csstransforms .cn-wrapper li a {
-  display: block;
-  font-size: 1.18em;
-  height: 14.5em;
-  width: 14.5em;
-  position: absolute;
-  position: fixed; /* fix the "displacement" bug in webkit browsers when using tab key */
-  bottom: -7.25em;
-  right: -7.25em;
-  border-radius: 50%;
-  text-decoration: none;
-  color: #fff;
-  padding-top: 1.8em;
-  text-align: center;
-  transform: skew(-50deg) rotate(-70deg) scale(1);
-  transition: opacity 0.3s, color 0.3s;
-}
-
-.csstransforms .cn-wrapper li a span {
-  font-size: 1.1em;
-  opacity: 0.7;
-}
-/* for a central angle x, the list items must be skewed by 90-x degrees
-in our case x=40deg so skew angle is 50deg
-items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
-
-.csstransforms .cn-wrapper li:first-child {
-  transform: rotate(-10deg) skew(50deg);
-}
-
-.csstransforms .cn-wrapper li:nth-child(2) {
-  transform: rotate(30deg) skew(50deg);
-}
-
-.csstransforms .cn-wrapper li:nth-child(3) {
-  transform: rotate(70deg) skew(50deg)
-}
-
-.csstransforms .cn-wrapper li:nth-child(4) {
-  transform: rotate(110deg) skew(50deg);
-}
-
-.csstransforms .cn-wrapper li:nth-child(5) {
-  transform: rotate(150deg) skew(50deg);
-}
-
-.csstransforms .cn-wrapper li:nth-child(odd) a {
-  background-color: #a11313;
-  background-color: hsla(0, 88%, 63%, 1);
-}
-
-.csstransforms .cn-wrapper li:nth-child(even) a {
-  background-color: #a61414;
-  background-color: hsla(0, 88%, 65%, 1);
-}
-
-/* active style */
-.csstransforms .cn-wrapper li.active a {
-  background-color: #b31515;
-  background-color: hsla(0, 88%, 70%, 1);
-}
-
-/* hover style */
-.csstransforms .cn-wrapper li:not(.active) a:hover,
-.csstransforms .cn-wrapper li:not(.active) a:active,
-.csstransforms .cn-wrapper li:not(.active) a:focus {
-  background-color: #b31515;
-  background-color: hsla(0, 88%, 70%, 1);
-}
-
-/*for older browsers*/
-.no-csstransforms .cn-wrapper{
-  font-size:1em;
-  height:5em;
-  width:25.15em;
-  bottom:0;
-  margin-left: -12.5em;
-  overflow: hidden;
-  position: fixed;
-  z-index: 10;
-  left:50%;
-  border:1px solid #ddd;
-}
-
-.no-csstransforms .cn-button{
-  display:none;
-}
-
-.no-csstransforms .cn-wrapper li{
-  position:static;
-  float:left;
-  font-size:1em;
-  height:5em;
-  width:5em;
-  background-color: #eee;
-  text-align:center;
-  line-height:5em;
-}
-
-.no-csstransforms .cn-wrapper li a{
-  display:block;
-  width:100%;
-  height:100%;
-  text-decoration:none;
-  color:inherit;
-  font-size:1.3em;
-  border-right: 1px solid #ddd;
-}
-
-.no-csstransforms .cn-wrapper li a:last-child{
-  border:none;
-}
-
-.no-csstransforms .cn-wrapper li a:hover,
-.no-csstransforms .cn-wrapper li a:active,
-.no-csstransforms .cn-wrapper li a:focus{
-  background-color: white;
-}
-
-.no-csstransforms .cn-wrapper li.active a {
-  background-color: #6F325C;
-  color: #fff;
-}
-
-
-
-
 @media (min-width: 481px) and (max-width: 800px) {
 
   .myName {
-    font-size: 24px;
+    font-size: 35px;
     letter-spacing: 4px;
   }
 
-  .name_div img {
-    height: 115px;
-  }
-
-  #because {
-    font-size: 75px;
-  }
-
-  #laptop_div {
-    font-size: 21px;
-    margin-left: 45%;
-  }
-
-}
-
-@media (min-width: 320px) and (max-width: 480 px) {
-
-  .myName {
-    font-size: 40px;
-    letter-spacing: 4px;
-  }
-
-  .topnav {
-    width: 105%;
-    height: auto;
-    float: none;
-    z-index: 1000;
-
-  }
-
-  #photos, #about, #work, #resume {
-    width: 100%;
+  .topnav img {
+    height: 105px;
   }
 
   #because {
     font-size: 35px;
+    margin: 10px -6px 10px 10px;
   }
 
   #laptop_div {
-    margin-left: 45%;
-    font-size: 10px;
+    font-size: 11px;
+  }
+
+  #about-link, #work-link, #photos-link, #resume-link {
+    width: 100%;
+  }
+  .links li {
+    float: left;
+    clear: left;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+ .myName {
+    font-size: 35px;
+    letter-spacing: 8px;
+    /*margin-right: 20%;*/
+  }
+
+  .navDiv {
+
+    margin: 12px 0px 0px 13%;
+  }
+
+  .topnav {
+    height: 100px;
+  }
+
+  .topnav img {
+    display: none;
+  }
+
+  #because {
+    display: none;
+  }
+
+  #splash {
+    margin: -14px 0 0 36%;
+  }
+
+  #laptop_div {
+    font-size: 11px;
+  }
+
+  #about-link, #work-link, #photos-link, #resume-link {
+    width: 100%;
+  }
+
+  .links {
+    margin: 94px 0 0 0;
+  }
+
+  .links li {
+    float: left;
+    clear: left;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
   }
 
   #photos, #about, #work, #resume {
     float: none;
     position: absolute;
-    width: 94%;
+    width: 100%;
     padding: 15px 15px 20px 15px;
     font-size: 20px;
     margin: 360px 0 0 0;
@@ -539,36 +381,10 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 
   .in_a_box {
     padding: 0px 12% 10px 10%;
-
   }
 
-  #photos img {
-    width: 97%;
-  }
-
-  /*social */
-  .csstransforms .cn-wrapper{
-    font-size:.68em;
-  }
-  .cn-button{
-    font-size:1em;
-  }
-  .csstransforms .cn-wrapper li {
-    font-size:1.52em;
-  }
 }
 
-
-@media screen and (max-width:320px){
-  .no-csstransforms .cn-wrapper{
-    width:15.15px;
-    margin-left: -7.5em;
-  }
-  .no-csstransforms .cn-wrapper li{
-    height:3em;
-    width:3em;
-  }
-}
 
 
 

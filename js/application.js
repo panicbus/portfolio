@@ -36,7 +36,7 @@ $(document).ready(function(){
    $('body').on('click',".splash", function(event) {
     $('.nico-view').fadeOut('slow');
     $('#splash').fadeIn('slow');
-    hoverLink(this).hide();
+    hoverLink(this);
   })
 
 
@@ -57,18 +57,15 @@ $(document).ready(function(){
     },
     zoom: {
       enabled: true,
-      duration: 300, // don't foget to change the duration also in CSS
+      duration: 300,
       opener: function(element) {
         return element.find('img');
       }
     }
-
   });
 
-
-
-
 });
+
 
 
 
