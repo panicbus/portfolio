@@ -136,11 +136,6 @@ a:link, a:visited, a:active, h1:hover {
    text-decoration: none;
 }
 
-#the_more_div {
-  /*display: none;*/
-}
-
-
 .links {
   font-size: 24px;
   text-align: center;
@@ -191,35 +186,81 @@ a:link, a:visited, a:active, h1:hover {
 }
 
 
-/*photo image hover text*/
-.cover {
-  position: absolute;
-  top: 0; right: 0;
-  bottom: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  color: rgba(255,255,255,0);
+/*for pic hover transition*/
+
+.pic1 {
+  background: url('../img/bandhub1.png');
+  width: 400px;
+  height: 217px;
+  margin: 15px;
+  background-size: cover;
+  float: left;
+}
+.pic2 {
+  background: url('../img/bandhub2.png');
+  width: 400px;
+  height: 217px;
+  margin: 15px;
+  background-size: cover;
+  float: left;
+}
+.pic3 {
+  background: url('../img/moviepop.png');
+  width: 400px;
+  height: 217px;
+  margin: 15px;
+  background-size: cover;
+  float: left;
+}
+.pic4 {
+  background: url('../img/treasurehunter1.png');
+  width: 400px;
+  height: 217px;
+  margin: 15px;
+  background-size: cover;
+  float: left;
+}
+.pic5 {
+  background: url('../img/treasurehunter2.png');
+  width: 400px;
+  height: 217px;
+  margin: 15px;
+  background-size: cover;
+  float: left;
+}
+.pic6 {
+  background: url('../img/treasurehunter3.png');
+  width: 130px;
+  height: 217px;
+  margin: 15px;
+  background-size: cover;
+  float: left;
+}
+.pic7 {
+  background: url('../img/wifly1.png');
+  width: 400px;
+  height: 217px;
+  margin: 15px;
+  background-size: cover;
+  float: left;
+}
+
+.text {
+  background: #000;
   text-align: center;
-  transition: all 1s linear;
+  color: yellow;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  transition: opacity 0.6s;
 }
 
-.zoom-gallery a:hover .cover {
-  background-color: rgba(0,0,0,.8);
-  color: rgba(255,255,255,1);
-  transition: all .2s linear;
+.text:hover {
+  opacity: .8;
 }
 
-.zoom-gallery a:hover h3 {
-  color: red;
-}
-
-.zoom-gallery h3 {
-  font-size: 1.2em;
-}
-
-.zoom-gallery p {
-  font-size: .9em;
-}
 
 /*content elements*/
 
