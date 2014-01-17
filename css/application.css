@@ -309,6 +309,11 @@ a:link, a:visited, a:active, h1:hover {
   width: 68%;
 }
 
+.work_pics_wrapper {
+  width: 100%;
+  height: 240px;
+}
+
 
 .ga:hover {
   color: #2F41CC;
