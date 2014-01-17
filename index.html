@@ -63,48 +63,69 @@
 </div>
 
 <div id="work" class="nico-view">
-  <i class="fa fa-code fa-3x"></i>
-  <p>A sampling of some of the web apps I created during General Assembly's WDI course:</p>
-  <a href="http://bandhub.herokuapp.com/" target="_blank"><h2>BandHub</h2></a>
-  <p>Ruby on Rails | HTML5 | CSS3 | JavaScript | jQuery | Devise/OmniAuth | Echonest, SongKick APIs<p>
-  <div class="pic1"><div class="text"><br><br><br>BandHub Landing Page</div></div>
-  <div class="pic2"><div class="text"><br><br><br>Band Corral</div></div>
-  <br><br><br><br><br><br><br><br><br>
-  <p><em>BandHub</em> is a single page app (SPA) that lets users search for and save their favorite bands to keep up with their latest news and information. The app taps two external APIs and aggregates tour data, news stories, artist-tagged blog posts and more!
-  </p>
-  <p></p>
-  <a href="http://moviepop.herokuapp.com/" target="_blank"><h2>MoviePop!</h2></a>
-  <p>Ruby on Rails | HTML5 | CSS3 | JavaScript | jQuery | Bootstrap | Devise | MyMovieAPI.com<p>
-  <div class="pic3"><div class="text"><br><br><br>MoviePop!</div></div>
-  <br><br><br><br><br><br><br><br><br>
-  <p><em>MoviePop!</em> is a SPA that lets you search for, save, and check off your favorite movies to-do list-style all inside a beautiful interface.</p>
-  <p></p>
-  <a href="http://treasurehunter.herokuapp.com/" target="_blank"><h2>Treasure Hunter</h2></a>
-  <p>Ruby on Rails | HTML5 | CSS3 | JS | CoffeeScript | GoogleMaps & Twilio Api | Devise</p>
-  <div class="pic4"><div class="text"><br><br><br>Treasure Hunter Map Page</div></div>
-  <div class="pic5"><div class="text"><br><br><br>Hunt List</div></div>
-  <div class="pic6"><div class="text"><br><br><br>Mobile View</div></div>
-  <br><br><br><br><br><br><br><br><br>
-  <p><em>Treasure Hunter</em> is a urban scavenger hunt game played using your mobile device and the streets of your city! Players can be Huntmasters (to create hunts for others) or Hunters (upon invitation) to get clues and find secret locations around the town. Get your friends together and Treasure Hunt! Currently in alpha.</p>
-  <p></p>
-  <a href="http://wiflyinthesky.herokuapp.com"><h2>WiFly</h2></a>
-  <p>Ruby on Rails | HTML5 | CSS3 | Bootstrap<p>
-  <div class="pic7"><div class="text"><br><br><br>WiFly Main</div></div>
-  <br><br><br><br><br><br><br><br><br>
-  <p><em>WiFly</em> lets you to search for an airport anywhere around the world to see if it has an available WiFi signal for public use, if it's free, and if it's not, what's the fee to use it. Most data is crowdsourced. Currently in beta.</p>
-  <hr>
-  <h2>Writing</h2>
-  <p>I'm not a one trick pony. I'm a pretty good writer too.</p>
-  <p>Please click through and see some articles I've published around the Web:</p>
-  <ul>
-    <li>On <b>AirTreks</b>: <a href="http://news.airtreks.com/2012/03/the-act-of-becoming-unlost-a-meditation/" target="_blank">The Act of Becoming Unlost - A Meditation</a></li><br>
-    <li>On <b>AirTreks</b>: <a href="http://news.airtreks.com/2012/06/7-places-that-will-leave-you-speechless-wondering-and-dreaming/" target="_blank">7 Places That Will Leave You Speechless (wondering and dreaming)</a></li><br>
-    <li>On <b>Almost Fearless</b>: <a href="http://life.almostfearless.com/the-indecipherable-language-of-the-indian-roadway/" target="_blank">The Indecipherable Language of the India Roadway</a></li><br>
-    <li>On <b>Bootsnall</b>: <a href="http://www.bootsnall.com/articles/11-02/breaking-the-sphere-of-solitude-in-dubrovnik.html" target="_blank">Breaking the Sphere of Solitude in Dubrovnik</a></li><br>
-    <li>On <b>Trekworld</b>: <a href="http://www.trekworld.com/2012/08/27/getting-lost-on-purpose/" target="_blank">Getting Lost on Purpose</a></li><br>
-    <li>On <b>Trekworld</b>: <a href="http://www.trekworld.com/2012/10/08/7-life-lessons-i-learned-in-india/" target="_blank">7 Life Lessons I Learned in India</a></li>
-  </ul>
-  Or check out <b><a style="font-size: 24px" href="http://www.tentimesone.com">10 Times One</a></b>, an arts, photography and music blog I kept for 3 years.
+  <div data-role="content" id="top">
+    <i class="fa fa-code fa-3x"></i>
+      <p style="text-align: center">A sampling of some of the web apps I created during General Assembly's WDI course:</p>
+      <div class="work_nav">
+        <a href="#bandhubAnchor"><li>BandHub</li></a>&nbsp;|&nbsp;
+        <a href="#moviepopAnchor" id="anchor2" class="anchorlink"><li>MoviePop!</li></a>&nbsp;|&nbsp;
+        <a href="#treasureAnchor" id="anchor3" class="anchorlink"><li>Treasure Hunter</li></a>&nbsp;|&nbsp;
+        <a href="#wiflyAnchor" id="anchor4" class="anchorlink"><li>WiFly</li></a>
+        <p style="margin:-2px 0 0 24%">Click to jump to the respective project.</p>
+      </div>
+
+      <a name="bandhubAnchor" id="bandhubAnchor"></a>
+      <a href="http://bandhub.herokuapp.com/" target="_blank"><h2>BandHub</h2></a>
+      <p>Ruby on Rails | HTML5 | CSS3 | JavaScript | jQuery | Devise/OmniAuth | Echonest, SongKick APIs<p>
+      <div class="pic1"><div class="text"><br><br><br>BandHub Landing Page</div></div>
+      <div class="pic2"><div class="text"><br><br><br>Band Corral</div></div>
+      <br><br><br><br><br><br><br><br><br>
+      <p><em>BandHub</em> is a single page app (SPA) that lets users search for and save their favorite bands to keep up with their latest news and information. The app taps two external APIs and aggregates tour data, news stories, artist-tagged blog posts and more!</p>
+      <a class="top" data-ajax="false" data-role="button" href="#top">TOP</a>
+      <p></p>
+
+      <a name="moviepopAnchor" id="moviepopAnchor"></a>
+      <a href="http://moviepop.herokuapp.com/" target="_blank"><h2>MoviePop!</h2></a>
+      <p>Ruby on Rails | HTML5 | CSS3 | JavaScript | jQuery | Bootstrap | Devise | MyMovieAPI.com<p>
+      <div class="pic3"><div class="text"><br><br><br>MoviePop!</div></div>
+      <br><br><br><br><br><br><br><br><br>
+      <p><em>MoviePop!</em> is a SPA that lets you search for, save, and check off your favorite movies to-do list-style all inside a beautiful interface.</p>
+      <a class="top" data-ajax="false" data-role="button" href="#top">TOP</a>
+      <p></p>
+
+      <a name="treasureAnchor" id="treasureAnchor"></a>
+      <a href="http://treasurehunter.herokuapp.com/" target="_blank"><h2>Treasure Hunter</h2></a>
+      <p>Ruby on Rails | HTML5 | CSS3 | JS | CoffeeScript | GoogleMaps & Twilio Api | Devise</p>
+      <div class="pic4"><div class="text"><br><br><br>Treasure Hunter Map Page</div></div>
+      <div class="pic5"><div class="text"><br><br><br>Hunt List</div></div>
+      <div class="pic6"><div class="text"><br><br><br>Mobile</div></div>
+      <br><br><br><br><br><br><br><br><br>
+      <p><em>Treasure Hunter</em> is a urban scavenger hunt game played using your mobile device and the streets of your city! Players can be Huntmasters (to create hunts for others) or Hunters (upon invitation) to get clues and find secret locations around the town. Get your friends together and Treasure Hunt! Currently in alpha.</p>
+      <a class="top" data-ajax="false" data-role="button" href="#top">TOP</a>
+      <p></p>
+
+      <a name="wiflyAnchor" id="wiflyAnchor"></a>
+      <a href="http://wiflyinthesky.herokuapp.com"><h2>WiFly</h2></a>
+      <p>Ruby on Rails | HTML5 | CSS3 | Bootstrap<p>
+      <div class="pic7"><div class="text"><br><br><br>WiFly Main</div></div>
+      <br><br><br><br><br><br><br><br><br>
+      <p><em>WiFly</em> lets you to search for an airport anywhere around the world to see if it has an available WiFi signal for public use, if it's free, and if it's not, what's the fee to use it. Most data is crowdsourced. Currently in beta.</p>
+      <a class="top" data-ajax="false" data-role="button" href="#top">TOP</a>
+      <hr>
+
+      <h2>Writing</h2>
+      <p>I'm a lot of things, but a one trick pony I am not. I'm a pretty good writer too.</p>
+      <p>Please click through and see some articles I've published around the Web:</p>
+      <ul>
+        <li>On <b>AirTreks</b>: <a href="http://news.airtreks.com/2012/03/the-act-of-becoming-unlost-a-meditation/" target="_blank">The Act of Becoming Unlost - A Meditation</a></li><br>
+        <li>On <b>AirTreks</b>: <a href="http://news.airtreks.com/2012/06/7-places-that-will-leave-you-speechless-wondering-and-dreaming/" target="_blank">7 Places That Will Leave You Speechless (wondering and dreaming)</a></li><br>
+        <li>On <b>Almost Fearless</b>: <a href="http://life.almostfearless.com/the-indecipherable-language-of-the-indian-roadway/" target="_blank">The Indecipherable Language of the India Roadway</a></li><br>
+        <li>On <b>Bootsnall</b>: <a href="http://www.bootsnall.com/articles/11-02/breaking-the-sphere-of-solitude-in-dubrovnik.html" target="_blank">Breaking the Sphere of Solitude in Dubrovnik</a></li><br>
+        <li>On <b>Trekworld</b>: <a href="http://www.trekworld.com/2012/08/27/getting-lost-on-purpose/" target="_blank">Getting Lost on Purpose</a></li><br>
+        <li>On <b>Trekworld</b>: <a href="http://www.trekworld.com/2012/10/08/7-life-lessons-i-learned-in-india/" target="_blank">7 Life Lessons I Learned in India</a></li>
+      </ul>
+      Or check out <b><a style="font-size: 24px" href="http://www.tentimesone.com">10 Times One</a></b>, an arts, photography and music blog I kept for 3 years.
+  </div> <!-- for Back to Top div -->
 </div>
 
 <div id="photos" class="nico-view">
@@ -158,7 +179,7 @@
 
   <p style="text-align: center">:::&nbsp;&nbsp;&nbsp; :::&nbsp;&nbsp;&nbsp; :::</p>
 
-  <p>Yeah. Ultra-sexy.</p>
+  <p>Jobs are sexy. Please donate your finest position to the cause. Thank you.</p>
 </div>
 
 </body>

@@ -121,13 +121,6 @@ td {
   font-size: 12px;
 }
 
-/*.social {
-  height: 25px;
-  z-index: 10px
-}*/
-
-
-
 a:link, a:visited, a:active, h1:hover {
   color: #333333;
 }
@@ -265,7 +258,6 @@ a:link, a:visited, a:active, h1:hover {
 /*content elements*/
 
 #photos, #about, #work, #resume {
-  /*background-color: #408AD2;*/
   padding: 150px 15px 20px 35px;
   font-family: 'Raleway';
   font-size: 22px;
@@ -294,9 +286,29 @@ a:link, a:visited, a:active, h1:hover {
   color: #ECF0F1;
 }
 
-#photos img {
-  width: 48 %;
+ /* scroll down navbar in Work*/
+.work_nav li {
+  display: inline-block;
+  letter-spacing: 5px;
+  font-size: 28px;
+  padding: 3px;
+  cursor: pointer;
 }
+
+.work_nav li:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #cccccc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.work_nav {
+  margin: 17px 0 0 15%;
+  background-color: rgba(0,0,0,0.2);
+  padding: 5px;
+  width: 68%;
+}
+
 
 .ga:hover {
   color: #2F41CC;
@@ -352,6 +364,7 @@ a:link, a:visited, a:active, h1:hover {
   #about-link, #work-link, #photos-link, #resume-link {
     width: 100%;
   }
+
   .links li {
     float: left;
     clear: left;

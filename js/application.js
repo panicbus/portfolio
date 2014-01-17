@@ -39,7 +39,15 @@ $(document).ready(function(){
     hoverLink(this);
   })
 
+   // jQuery scrolldown in Work
+  $('a').click(function(){
+    $('html, body').animate({
+      scrollTop: $( $(this).attr('href') ).offset().top - 115 //scrolls to anchor tag in body minus 115 px
+    }, 'slow');
+    return false;
+  });
 
+    //photo gallery lightbox
   $('.zoom-gallery').magnificPopup({
     delegate: 'a',
     type: 'image',
