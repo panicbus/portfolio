@@ -237,6 +237,26 @@ a:link, a:visited, a:active, h1:hover {
   background-size: cover;
   float: left;
 }
+.pic8 {
+  background: url('../img/the_sentimentalist.jpg');
+  width: 320px;
+  height: 500px;
+  margin: 15px 30px 15px 15px;
+  background-size: cover;
+  float: left;
+}
+.work_pics_wrapper.sentimental {
+  height: 510px;
+}
+.pic9 {
+  background: url('../img/10x1.png');
+  width: 97%;
+  height: 62%;
+  margin: 15px;
+  background-size: cover;
+  float: left;
+}
+
 
 .text {
   background: #000;
@@ -287,10 +307,18 @@ a:link, a:visited, a:active, h1:hover {
 }
 
  /* scroll down navbar in Work*/
+.super_work_nav {
+  margin-top: -60px
+ }
+
+.work_nav {
+  text-align: center;
+}
+
 .work_nav li {
   display: inline-block;
   letter-spacing: 5px;
-  font-size: 28px;
+  font-size: 27px;
   padding: 3px;
   cursor: pointer;
 }
@@ -305,8 +333,8 @@ a:link, a:visited, a:active, h1:hover {
 .work_nav {
   margin: 17px 0 0 15%;
   background-color: rgba(0,0,0,0.2);
-  padding: 5px;
-  width: 68%;
+  padding: 5px 10px 10px 20px;
+  width: 70%;
 }
 
 .work_pics_wrapper {
