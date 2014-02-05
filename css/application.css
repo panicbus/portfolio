@@ -183,43 +183,18 @@ a:link, a:visited, a:active, h1:hover {
 
 .pic1 {
   background: url('../img/bandhub1.png');
-  width: 400px;
-  height: 217px;
-  margin: 15px;
-  background-size: cover;
-  float: left;
 }
 .pic2 {
   background: url('../img/bandhub2.png');
-  width: 400px;
-  height: 217px;
-  margin: 15px;
-  background-size: cover;
-  float: left;
 }
 .pic3 {
   background: url('../img/moviepop.png');
-  width: 400px;
-  height: 217px;
-  margin: 15px;
-  background-size: cover;
-  float: left;
 }
 .pic4 {
   background: url('../img/treasurehunter1.png');
-  width: 400px;
-  height: 217px;
-  margin: 15px;
-  background-size: cover;
-  float: left;
 }
 .pic5 {
   background: url('../img/treasurehunter2.png');
-  width: 400px;
-  height: 217px;
-  margin: 15px;
-  background-size: cover;
-  float: left;
 }
 .pic6 {
   background: url('../img/treasurehunter3.png');
@@ -231,11 +206,13 @@ a:link, a:visited, a:active, h1:hover {
 }
 .pic7 {
   background: url('../img/wifly1.png');
-  width: 400px;
+}
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic7 {
+  width: 459px;
   height: 217px;
   margin: 15px;
   background-size: cover;
-  float: left;
+  float: left; 
 }
 .pic8 {
   background: url('../img/the_sentimentalist.jpg');
