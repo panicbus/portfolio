@@ -13,6 +13,18 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <!-- Google analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48329636-2', 'nicocrisafulli.com');
+  ga('send', 'pageview');
+  </script>
+
 </head>
 <body>
 
@@ -36,8 +48,8 @@
 
 <div class="links">
     <li id="about-link" class="about view-options">About</li>
-    <li id="work-link" class="work view-options">Work</li>
-    <li id="photos-link" class="photos view-options">Photos</li>
+    <li id="work-link" class="work view-options">Code</li>
+    <li id="writing-link" class="writing view-options">Writing</li>
     <li id="resume-link" class="resume view-options">R&#233;sum&#233;</li>
 </div>
 
@@ -49,7 +61,7 @@
   <p>My previous background centered around writing and marketing primarily in the travel industry but have now transitioned into web development and programming full-time.</p>
   <p>I'm currently proficient in Ruby on Rails, JavaScript, jQuery, HTML5 and CSS3, specializing in front-end work. I'm available for full-time or freelance opportunities.</p>
   <p style="text-align: center">:::&nbsp;&nbsp;&nbsp; :::&nbsp;&nbsp;&nbsp; :::</p>
-  <p>Please take a second and check out some of the apps I've built, articles I penned and a sampling of photos I've taken.</p>
+  <p>Please take a second and check out some of the apps I've built and a sampling of my public writing.</p>
   <p style="bold">Please reach out if you like what you see. I'm happy to hear from you!&nbsp;&nbsp;<i class="fa fa-bullhorn"></i></p>
   <div class="linedrop">
     <a href="mailto:nicocrisafulli@gmail.com?Subject=Work for us!">nicocrisafulli@gmail.com</a><br>
@@ -68,18 +80,28 @@
       <div class="super_work_nav">
         <div class="work_nav">
           <p style="align:right; margin:-2px 0 0 0">Web app projects</p>
+          <a href="#scenicAnchor" id="anchor3" class="anchorlink"><li>Scenic 49</li></a>&nbsp;|&nbsp;
           <a href="#bandhubAnchor"><li>BandHub</li></a>&nbsp;|&nbsp;
           <a href="#moviepopAnchor" id="anchor2" class="anchorlink"><li>MoviePop!</li></a>&nbsp;|&nbsp;
-          <a href="#treasureAnchor" id="anchor3" class="anchorlink"><li>Treasure Hunter</li></a>&nbsp;|&nbsp;
           <a href="#wiflyAnchor" id="anchor4" class="anchorlink"><li>WiFly</li></a><br>
         </div>
-        <div class="work_nav">  
-          <p style="align:right; margin:-2px 0 0 0">Writing projects</p>
-          <a href="#sentimentalistAnchor" id="anchor5" class="anchorlink"><li>The Sentimentalist</li></a>&nbsp;|&nbsp;
-          <a href="#articlesAnchor" id="anchor5" class="anchorlink"><li>Articles</li></a>&nbsp;|&nbsp;
-          <a href="#10x1Anchor" id="anchor6" class="anchorlink"><li>10 Times One</li></a>
-        </div>
       </div>
+
+      <a name="scenicAnchor" id="scenicAnchor"></a>
+      <a href="http://scenic49.herokuapp.com/" target="_blank"><h2>Scenic 49</h2></a>
+      <p>Ruby on Rails | HTML5 | CSS3 | JavaScript | Isotope.js | MapBox | AWS | Paperclip Ruby Gem</p>
+      <div class="work_pics_wrapper">
+        <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic4"><div class="text"><br><br><br>Map View with Station Markers</div></div></a>
+        <a href="http://scenic49.herokuapp.com/all_checkins" target="_blank"><div class="pic5"><div class="text"><br><br><br>All Checkins Page</div></div></a>
+        <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic6"><div class="text"><br><br><br>Mobile view</div></div></a>
+      </div>
+      <p><em>On The Road: The Scenic 49</em> is an art project concieved by Peter Foucault and Chris Treggiari where the artists hiked the famous 49 Mile Scenic Drive in San Francisco and hosted interactive pop-up screenprinting installations at 9 different locations around the city.</p>
+      <p>At each "Station" the local passersby stopped to get some art and talk about how their neighborhood is changing. Photos of them along with their checkins would be uploaded and saved to the web app's database for later perusal at an art opening at the end of their hike.</p>
+      <p>All the checkins and photos are archived on the site in the "All Checkins" page and can be filtered by Station.</p>  
+      <p>This project can be cloned and reproduced for any city in the world and is highly encouraged.</p> 
+      <a class="top" data-ajax="false" data-role="button" href="#top">TOP</a>
+      <p></p>
+
       <a name="bandhubAnchor" id="bandhubAnchor"></a>
       <a href="http://bandhub.herokuapp.com/" target="_blank"><h2>BandHub</h2></a>
       <p>Ruby on Rails | HTML5 | CSS3 | JavaScript | jQuery | Devise/OmniAuth | Echonest, SongKick APIs<p>
@@ -88,7 +110,8 @@
         <a href="http://bandhub.herokuapp.com/" target="_blank"><div class="pic2"><div class="text"><br><br><br>Band Corral</div></div></a>
       </div>
       <p><em>BandHub</em> is a single page app (SPA) that lets users search for and save their favorite bands to keep up with their latest news and information. The app taps two external APIs and aggregates tour data, news stories, artist-tagged blog posts and more!</p>
-      <p>Give it a whirl - Username: MusicLover; Password: demodemo</p>
+      <p>Give it a whirl - Username: MusicLover 
+      <p style="padding-left:160px; margin-top:-20px">Password: demodemo</p>
       <a class="top" data-ajax="false" data-role="button" href="#top">TOP</a>
       <p></p>
 
@@ -102,18 +125,6 @@
       <a class="top" data-ajax="false" data-role="button" href="#top">TOP</a>
       <p></p>
 
-      <a name="treasureAnchor" id="treasureAnchor"></a>
-      <a href="http://treasurehunter.herokuapp.com/" target="_blank"><h2>Treasure Hunter</h2></a>
-      <p>Ruby on Rails | HTML5 | CSS3 | JS | CoffeeScript | GoogleMaps & Twilio Api | Devise</p>
-      <div class="work_pics_wrapper">
-        <a href="http://treasurehunter.herokuapp.com/" target="_blank"><div class="pic4"><div class="text"><br><br><br>Treasure Hunter Map Page</div></div></a>
-        <a href="http://treasurehunter.herokuapp.com/" target="_blank"><div class="pic5"><div class="text"><br><br><br>Hunt List</div></div></a>
-        <a href="http://treasurehunter.herokuapp.com/" target="_blank"><div class="pic6"><div class="text"><br><br><br>Mobile</div></div></a>
-      </div>
-      <p><em>Treasure Hunter</em> is a urban scavenger hunt game played using your mobile device and the streets of your city! Players can be Huntmasters (to create hunts for others) or Hunters (upon invitation) to get clues and find secret locations around the town. Get your friends together and Treasure Hunt! Currently in alpha.</p>
-      <a class="top" data-ajax="false" data-role="button" href="#top">TOP</a>
-      <p></p>
-
       <a name="wiflyAnchor" id="wiflyAnchor"></a>
       <a href="http://wiflyinthesky.herokuapp.com" target="_blank"><h2>WiFly</h2></a>
       <p>Ruby on Rails | HTML5 | CSS3 | Bootstrap<p>
@@ -121,74 +132,44 @@
         <a href="http://wiflyinthesky.herokuapp.com" target="_blank"><div class="pic7"><div class="text"><br><br><br>WiFly Main</div></div></a>
       </div>
       <p><em>WiFly</em> lets you to search for an airport anywhere around the world to see if it has an available WiFi signal for public use, if it's free, and if it's not, what's the fee to use it. Most data is crowdsourced. Currently in beta.</p>
-      <a class="top" data-ajax="false" data-role="button" href="#top">TOP</a>
-      <hr>
-
-      <h2 style="color: #333333">Writing</h2>
-      <p>I'm a lot of things, but a one trick pony I am not. I'm a pretty good writer too. Here's a selection:</p>
-      <a name="sentimentalistAnchor" id="sentimentalistAnchor"></a>
-      <p><em>The Sentimentalist</em> is a fully complete 200+ page novel self-published in 2002 and most recently on Amazon.com this year.</p>
-      <div class="work_pics_wrapper sentimental">
-        <a href="http://www.amazon.com/The-Sentimentalist-novel-Nico-Crisafulli-ebook/dp/B00HX5TBIC" target="_blank"><div class="pic8"><div class="text"><br><br><br><br><br><br>View <em>The Sentimentalist</em> on Amazon.com</div></div></a><br>
-        <p><em style="color: #333333">From the back cover:</em> "It's the start of the millennium in Paris. A young man has relocated from America to renew his inspiration and, with any luck, to fall in love. But the city is manipulative. He ducks, resists and attempts not to yield.<p> 
-        <p>Introspective, seductive, frequently tangential but consistently enjoyable, this book was written for those that know Paris a little or a lot, along with those who have never been. If you have ever loved, or wanted to love badly, you will enjoy this journey to the heart of your own inner sentimentalist."</p>
-      </div>
-      <a name="articlesAnchor" id="articlesAnchor"></a>
-      <h3>A selection of travel-related articles I've published around the Web:</h3>
-      <ul>
-        <li>On <b>AirTreks</b>: <a href="http://news.airtreks.com/2012/03/the-act-of-becoming-unlost-a-meditation/" target="_blank">The Act of Becoming Unlost - A Meditation</a></li><br>
-        <li>On <b>AirTreks</b>: <a href="http://news.airtreks.com/2012/06/7-places-that-will-leave-you-speechless-wondering-and-dreaming/" target="_blank">7 Places That Will Leave You Speechless (wondering and dreaming)</a></li><br>
-        <li>On <b>Almost Fearless</b>: <a href="http://life.almostfearless.com/the-indecipherable-language-of-the-indian-roadway/" target="_blank">The Indecipherable Language of the India Roadway</a></li><br>
-        <li>On <b>Bootsnall</b>: <a href="http://www.bootsnall.com/articles/11-02/breaking-the-sphere-of-solitude-in-dubrovnik.html" target="_blank">Breaking the Sphere of Solitude in Dubrovnik</a></li><br>
-        <li>On <b>Trekworld</b>: <a href="http://www.trekworld.com/2012/08/27/getting-lost-on-purpose/" target="_blank">Getting Lost on Purpose</a></li><br>
-        <li>On <b>Trekworld</b>: <a href="http://www.trekworld.com/2012/10/08/7-life-lessons-i-learned-in-india/" target="_blank">7 Life Lessons I Learned in India</a></li>
-      </ul>
-      <a name="10x1Anchor" id="10x1Anchor"></a>
-      Or check out <b><a style="font-size: 24px" href="http://www.tentimesone.com" target="_blank">10 Times One</a></b>, an arts, photography and music blog I kept for 3 years, currently in stasis, but still damn good.
-      <div class="work_pics_wrapper">
-        <a href="http://www.tentimesone.com"><div class="pic9 10x1"><div class="text"><br><br>Championing the creativity of the masses.</div></div></a>
-      </div>
+      <a class="top" data-ajax="false" data-role="button" href="#top">TOP</a>      
   </div> <!-- for Back to Top div -->
 </div>
 
-<div id="photos" class="nico-view">
-  <i class="fa fa-camera-retro fa-3x"></i>
-
-  <p>A sweet sampling of photos taken over the past few years:
-  Feel free to browse my <a href="http://www.flickr.com/photos/nicocrisafulli/sets">Flickr account </a>for more lens play.</p>
-
-  <table class="zoom-gallery">
-  <tr>
-    <td>
-      <h3>Three Heads, Six Arms | 2010</h3>
-      <a href="http://farm5.staticflickr.com/4126/4957695356_780acd3146_b.jpg" title="Three Heads, Six Arms" data-source="http://flic.kr/p/8y6u79" style="width 500px; height 340px"><img src="http://farm5.staticflickr.com/4126/4957695356_780acd3146.jpg" width="100%" height="auto" style="border: 8px solid #333333;"></a>
-    </td>
-    <td>
-      <h3>Traffic | 2011</h3>
-      <a href="http://farm6.staticflickr.com/5052/5581416264_e0fd6c5555_b.jpg" title="Traffic" data-source="http://flic.kr/p/9vddAU" style="width 500px; height 340px"><img src="http://farm6.staticflickr.com/5052/5581416264_e0fd6c5555.jpg" width="100%" height="auto" style="border: 8px solid #333333;"></a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>This Is How They Gather | 2011</h3>
-        <a href="http://farm6.staticflickr.com/5106/5580826105_ea40cc186f_b.jpg" title="This Is How They Gather" data-source="http://flic.kr/p/9vacaK" style="width 500px; height 370px"><img src="http://farm6.staticflickr.com/5106/5580826105_ea40cc186f.jpg" width="100%" height="auto" style="border: 8px solid #333333;"></a>
-    </td>
-    <td>
-      <h3>Gothic Hibernia | 2012</h3>
-      <a href="http://farm7.staticflickr.com/6012/5919721498_cb217cec49_b.jpg" title="Gothic Hibernia" data-source="http://flic.kr/p/a277XL" ><img src="http://farm7.staticflickr.com/6012/5919721498_cb217cec49.jpg" width="100%" height="81.5%" style="border: 8px solid #333333;"></a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>Reclining Buddha | 2007</h3>
-      <a href="http://farm2.staticflickr.com/1352/5181230134_5dd4d55d30_b.jpg" title="Watching You, Watching Me" data-source="http://flic.kr/p/8TRad3" style="width 500px; height 350px"><img src="http://farm2.staticflickr.com/1352/5181230134_5dd4d55d30.jpg" width="100%" height="auto" style="border: 8px solid #333333;"></a>
-    </td>
-    <td>
-      <h3>Watching You, Watching Me | 2010</h3>
-       <a href="http://farm6.staticflickr.com/5125/5356570148_6ba7a9d89d_b.jpg" title="Watching You, Watching Me" data-source="http://flic.kr/p/9akPFJ" style="width 500px; height 350px"><img src="http://farm6.staticflickr.com/5125/5356570148_6ba7a9d89d.jpg" width="100%" height="auto" style="border: 8px solid #333333;"></a>
-    </td>
-  </tr>
-  </table>
+<div id="writing" class="nico-view">
+  <i class="fa fa-pencil fa-3x"></i>
+  <div class="super_writing_nav">
+    <div class="writing_nav">  
+      <p style="align:right; margin:-2px 0 0 0">Writing projects</p>
+      <a href="#sentimentalistAnchor" id="anchor5" class="anchorlink"><li>The Sentimentalist</li></a>&nbsp;|&nbsp;
+      <a href="#articlesAnchor" id="anchor5" class="anchorlink"><li>Articles</li></a>&nbsp;|&nbsp;
+      <a href="#10x1Anchor" id="anchor6" class="anchorlink"><li>10 Times One</li></a>
+    </div>
+  </div>
+  <p>I'm a lot of things, but a one trick pony I am not. I'm a pretty good writer too. Here's a selection:</p>
+  <a name="sentimentalistAnchor" id="sentimentalistAnchor"></a>
+  <p><em>The Sentimentalist</em> is a fully complete 200+ page novel self-published in 2002 and most recently on Amazon.com this year.</p>
+  <div class="work_pics_wrapper sentimental">
+    <a href="http://www.amazon.com/The-Sentimentalist-novel-Nico-Crisafulli-ebook/dp/B00HX5TBIC" target="_blank"><div class="pic8"><div class="text"><br><br><br><br><br><br>View <em>The Sentimentalist</em> on Amazon.com</div></div></a><br>
+    <p><em style="color: #333333">From the back cover:</em> "It's the start of the millennium in Paris. A young man has relocated from America to renew his inspiration and, with any luck, to fall in love. But the city is manipulative. He ducks, resists and attempts not to yield.<p> 
+    <p>Introspective, seductive, frequently tangential but consistently enjoyable, this book was written for those that know Paris a little or a lot, along with those who have never been. If you have ever loved, or wanted to love badly, you will enjoy this journey to the heart of your own inner sentimentalist."</p>
+  </div>
+  <a name="articlesAnchor" id="articlesAnchor"></a>
+  <h3>A selection of travel-related articles I've published around the Web:</h3>
+  <ul>
+    <li>On <b>AirTreks</b>: <a href="http://news.airtreks.com/2012/03/the-act-of-becoming-unlost-a-meditation/" target="_blank">The Act of Becoming Unlost - A Meditation</a></li><br>
+    <li>On <b>AirTreks</b>: <a href="http://news.airtreks.com/2012/06/7-places-that-will-leave-you-speechless-wondering-and-dreaming/" target="_blank">7 Places That Will Leave You Speechless (wondering and dreaming)</a></li><br>
+    <li>On <b>Almost Fearless</b>: <a href="http://life.almostfearless.com/the-indecipherable-language-of-the-indian-roadway/" target="_blank">The Indecipherable Language of the India Roadway</a></li><br>
+    <li>On <b>Bootsnall</b>: <a href="http://www.bootsnall.com/articles/11-02/breaking-the-sphere-of-solitude-in-dubrovnik.html" target="_blank">Breaking the Sphere of Solitude in Dubrovnik</a></li><br>
+    <li>On <b>Trekworld</b>: <a href="http://www.trekworld.com/2012/08/27/getting-lost-on-purpose/" target="_blank">Getting Lost on Purpose</a></li><br>
+    <li>On <b>Trekworld</b>: <a href="http://www.trekworld.com/2012/10/08/7-life-lessons-i-learned-in-india/" target="_blank">7 Life Lessons I Learned in India</a></li><br>
+    <li>On the Airbnb blog: <a href="#" target="_blank">Coming soon</a>
+  </ul>
+  <a name="10x1Anchor" id="10x1Anchor"></a>
+  Or check out <b><a style="font-size: 24px" href="http://www.tentimesone.com" target="_blank">10 Times One</a></b>, an arts, photography and music blog I kept for 3 years, currently in stasis, but still damn good.
+  <div class="work_pics_wrapper">
+    <a href="http://www.tentimesone.com"><div class="pic9 10x1"><div class="text"><br><br>Championing the creativity of the masses.</div></div></a>
+  </div>
 </div>
 
 <div id="resume" class="nico-view">

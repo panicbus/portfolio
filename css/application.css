@@ -30,12 +30,12 @@ td {
   width: 40%;
 }
 
-.social a, #photos a, #about a, #work a, .nameDiv a {
+.social a, #writing a, #about a, #work a, .nameDiv a {
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
-.social a:hover, #photos a:hover, #about a:hover, #work a:hover, .nameDiv a:hover {
+.social a:hover, #writing a:hover, #about a:hover, #work a:hover, .nameDiv a:hover {
   color: #2F41CC;
   text-decoration: none;
 }
@@ -147,7 +147,7 @@ a:link, a:visited, a:active, h1:hover {
 }
 
 
-#about-link, #work-link, #photos-link, #resume-link {
+#about-link, #work-link, #writing-link, #resume-link {
   width: 23%;
 }
 
@@ -168,7 +168,7 @@ a:link, a:visited, a:active, h1:hover {
   background-color: #2980B9;
   color: #ECF0F1;
 }
-.links li.photos.current {
+.links li.writing.current {
   background-color: #E74C3C;
   color: #ECF0F1;
 }
@@ -191,14 +191,14 @@ a:link, a:visited, a:active, h1:hover {
   background: url('../img/moviepop.png');
 }
 .pic4 {
-  background: url('../img/treasurehunter1.png');
+  background: url('../img/scenic1.png');
 }
 .pic5 {
-  background: url('../img/treasurehunter2.png');
+  background: url('../img/scenic2.png');
 }
 .pic6 {
-  background: url('../img/treasurehunter3.png');
-  width: 130px;
+  background: url('../img/scenic3.png');
+  width: 150px;
   height: 217px;
   margin: 15px;
   background-size: cover;
@@ -254,7 +254,7 @@ a:link, a:visited, a:active, h1:hover {
 
 /*content elements*/
 
-#photos, #about, #work, #resume {
+#writing, #about, #work, #resume {
   padding: 150px 15px 20px 35px;
   font-family: 'Raleway';
   font-size: 22px;
@@ -273,7 +273,7 @@ a:link, a:visited, a:active, h1:hover {
   color: #ECF0F1;
 }
 
-#photos {
+#writing {
   background-color: #E74C3C;
   color: #ECF0F1;
 }
@@ -285,14 +285,14 @@ a:link, a:visited, a:active, h1:hover {
 
  /* scroll down navbar in Work*/
 .super_work_nav {
-  margin-top: -60px
+  margin-top: -75px
  }
 
-.work_nav {
-  text-align: center;
-}
+.super_writing_nav {
+  margin-top: -65px
+ }
 
-.work_nav li {
+.work_nav li, .writing_nav li {
   display: inline-block;
   letter-spacing: 5px;
   font-size: 27px;
@@ -300,7 +300,7 @@ a:link, a:visited, a:active, h1:hover {
   cursor: pointer;
 }
 
-.work_nav li:hover {
+.work_nav li:hover, .writing_nav li:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: #cccccc;
   border-radius: 4px;
@@ -308,10 +308,19 @@ a:link, a:visited, a:active, h1:hover {
 }
 
 .work_nav {
-  margin: 17px 0 0 15%;
+  text-align: center;
+  margin: 17px auto;
   background-color: rgba(0,0,0,0.2);
   padding: 5px 10px 10px 20px;
-  width: 70%;
+  width: 60%;
+}
+
+.writing_nav {
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.2);
+  padding: 15px 10px 10px 20px;
+  width: 65%;
 }
 
 .work_pics_wrapper {
@@ -371,7 +380,7 @@ a:link, a:visited, a:active, h1:hover {
     font-size: 11px;
   }
 
-  #about-link, #work-link, #photos-link, #resume-link {
+  #about-link, #work-link, #writing-link, #resume-link {
     width: 100%;
   }
 
@@ -418,7 +427,7 @@ a:link, a:visited, a:active, h1:hover {
     font-size: 11px;
   }
 
-  #about-link, #work-link, #photos-link, #resume-link {
+  #about-link, #work-link, #writing-link, #resume-link {
     width: 100%;
   }
 
@@ -434,7 +443,7 @@ a:link, a:visited, a:active, h1:hover {
     color: #fff;
   }
 
-  #photos, #about, #work, #resume {
+  #writing, #about, #work, #resume {
     float: none;
     position: absolute;
     width: 100%;
