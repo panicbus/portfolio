@@ -114,18 +114,18 @@ a:link, a:visited, a:active, h1:hover {
 
 /*for persistant active link*/
 .links li.work.current {
-  background-color: #DBCEA2;
-  color: #ecf0f1;
+  background-color: #FEF7EA;
+  color: #293231;
 }
 
 .links li.resume.current {
   background-color: #9ABAD3;
-  color: #ecf0f1;
+  color: #293231;
 }
 
 .links li.about.current {
-  background-color: #48607A;
-  color: #ecf0f1;
+  background-color: #FE7072;
+  color: #293231;
 }
 
 #project_banner {
@@ -174,7 +174,7 @@ a:link, a:visited, a:active, h1:hover {
   font-size: 63px;
   text-align: center;
   letter-spacing: 12px;
-  margin: 0;
+  margin: 0 13%;
 }
 
 #work p:nth-child(3){
@@ -262,7 +262,7 @@ a:link, a:visited, a:active, h1:hover {
 
 
 #work {
-  background-color: #DBCEA2;
+  background-color: #FEF7EA;
   color: #293231;
   padding: 150px 15px 20px 35px;
 }
@@ -274,9 +274,13 @@ a:link, a:visited, a:active, h1:hover {
 }
 
 #about {
-  background-color: #48607A;
-  color: #ECF0F1;
+  background-color: #FE7072;
+  color: #293231;
   padding: 115px 15px 20px 35px;
+}
+
+#about a {
+  color: #293231;
 }
 
 .work_footer {
