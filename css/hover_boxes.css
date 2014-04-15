@@ -1,0 +1,8 @@
+.box_container {
+	display: inline-block;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+}
