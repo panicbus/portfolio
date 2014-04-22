@@ -7,25 +7,18 @@ $(document).ready(function(){
 
   // default to #work
   $('#work-link').addClass('current');
-  $('.nico-view').hide();
   $('#work').show();
+ 
 
-  // nico-view = content div
-  $('body').on('click',".about", function(event) {
-    $('.nico-view').hide();
-    $('#about').show();
+  $('body').on('click',".about", function(event) { 
     hoverLink(this);
-  })
+  });
 
   $('body').on('click',".work", function(event) {
-    $('.nico-view').hide();
-    $('#work').show();
     hoverLink(this);
   })
 
   $('body').on('click',".resume", function(event) {
-    $('.nico-view').hide();
-    $('#resume').show();
     hoverLink(this);
   })
 
@@ -36,23 +29,47 @@ $(document).ready(function(){
     if (y <= 100) {
       $('#project_banner').fadeIn();
     }
-    if (y > 100 && y < 1900) {
-        $('.up_arrow').fadeIn();
-        $('.all_work_wrapper').fadeIn();
-        $('#project_banner').fadeOut();
+    if (y > 100) {
+      $('.up_arrow').fadeIn();
+      $('#project_banner').fadeOut();
     } else {
-        $('.up_arrow').fadeOut(200);
+        $('.up_arrow').fadeOut();
     }
   });
 
 
-  // jQuery scrolldown in Work
-  $('a').click(function(){
+  $(document).scroll(function(){
+    var pageScroll = $(this).scrollTop();
+    if (pageScroll <= 2693 ) {
+      $('.view-options').removeClass('current');
+      $('.work').addClass('current');
+    }
+    if (pageScroll > 2693 && pageScroll <= 3327 ) {
+      $('.view-options').removeClass('current');
+      $('.about').addClass('current');
+    }
+    if (pageScroll > 3327 ) {
+      $('.view-options').removeClass('current');
+      $('.resume').addClass('current');
+    }
+  })
+
+
+  // jQuery scrolldown
+  $('#project_banner').click(function(){
       $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - 110 //scrolls to anchor tag in body minus 115 px
+        scrollTop: $('#projectsAnchor').offset().top - 100 //scrolls to anchor tag in body
       }, 'slow');
       return false;
-    });
+  });
+
+  $('a').click(function(){
+      $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top //scrolls to anchor tag in body
+      }, 'slow' );
+      return false;
+  });
+
 
 });
 
