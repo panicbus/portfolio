@@ -6,7 +6,6 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
 **************************** -->
 <head>
   <title>Nico Crisafulli Portfolio</title>
-  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"> -->
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <!-- <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
   
@@ -15,7 +14,8 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
 
   <link rel="stylesheet" type="text/css" href="css/application.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Raleway|Domine|Sonsie+One|Nixie+One|Sancreek|Buda:300|Unica+One' rel='stylesheet' type='text/css'>
+  <link href="css/ihover.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway|Nixie+One' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
   <!-- Google analytics -->
@@ -33,113 +33,100 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
 
   <!-- static topnav -->
 <div class="topnav">
-  <div class="top_details">
-    <div class="nameDiv">
-      Nico Crisafulli
-    </div>
-
-    <div class="splash">
-      On The Front End:<i id="laptop" class="fa fa-laptop fa"></i>
-    </div>
+  <div class="nameDiv">
+    &#8226;Nico Crisafulli&#8226;
   </div>
 </div>
   <!-- end topnav -->
 
 <div class="links">
-  <a href="#workAnchor"><li id="work-link" class="work view-options">Work</li></a>
+  <a href="#workAnchor"><li id="work-link" class="work view-options">Projects</li></a>
   <a href="#aboutAnchor"><li id="about-link" class="about view-options">About</li></a>
   <a href="#resumeAnchor"><li id="resume-link" class="resume view-options">Resume</li></a>
 </div>
 
 <div data-role="content" id="top">
-  
-<a name="workAnchor" id="workAnchor"></a>
-<div id="work" class="nico-view">
-  <a href="#projectsAnchor">
-  <div id="project_banner" class="pb">
-    <div style="padding-left:6px">The Projects</div>
-  </div></a>
 
-  <div class="word_desc">
-    <p>Thanks for visiting...</p>
-    <p>a very special portfolio website</p>
-    <p>My name is Nico Crisafulli, a front-end web developer currently residing in the Oakland, California. This site was created to highlight projects built between September 2013 and February 2014. </p>
-    <p>Click The Projects Banner To Start</p>
-  </div>
-  <br><br>
-  <div class="all_work_wrapper">
-    <a name="scenicAnchor" id="scenicAnchor"></a>
-    <a name="projectsAnchor" id="projectsAnchor"></a>
-    <a href="http://scenic49.herokuapp.com/" target="_blank"><h2 class="project_title">Scenic 49</h2></a>
-    Ruby on Rails | HTML5 | CSS3 | JavaScript | Isotope.js | MapBox | AWS | Paperclip Ruby Gem
-    <div class="work_pics_wrapper">
-      <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic4"><div class="text"><br><br><br>Map View with Station Markers</div></div></a>
-      <a href="http://scenic49.herokuapp.com/all_checkins" target="_blank"><div class="pic5"><div class="text"><br><br><br>All Checkins Page</div></div></a>
-      <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic6"><div class="text"><br><br><br>Mobile view</div></div></a>
-    </div>
-    <p><em>On The Road: The Scenic 49</em> is the interactive online map component of an art project conceived by Peter Foucault and Chris Treggiari. Over the course of three days the artists hiked the famous 49 Mile Scenic Drive in San Francisco and hosted interactive screenprinting stations around the city.</p>
-    <p>The artists interacted with local passersby to talk about the change in their neighborhood in exchange for art. Photos along with their thoughts were saved to the web app's database for later perusal at an art opening in March of 2014.</p>  
-    <p>This project can be cloned and reproduced for any city in the world.</p> 
-    <p></p>
+  <a name="workAnchor" id="workAnchor"></a>
 
-    <a name="bandhubAnchor" id="bandhubAnchor"></a>
-    <a href="http://bandhub.herokuapp.com/" target="_blank"><h2 class="project_title">BandHub</h2></a>
-    Ruby on Rails | HTML5 | CSS3 | JavaScript | jQuery | Devise/OmniAuth | Echonest, SongKick APIs
-    <div class="work_pics_wrapper">
-      <a href="http://bandhub.herokuapp.com/" target="_blank"><div class="pic1"><div class="text"><br><br><br>BandHub Landing Page</div></div></a>
-      <a href="http://bandhub.herokuapp.com/" target="_blank"><div class="pic2"><div class="text"><br><br><br>Band Corral</div></div></a>
-    </div>
-    <p><em>BandHub</em> is a single page app that lets users search for and save their favorite bands to keep up with their latest news and information. The app taps two external APIs and aggregates tour data, news stories, artist-tagged blog posts and more!</p>
-    <p>Give it a whirl - Username: MusicLover 
-    <p style="padding-left:160px; margin-top:-20px">Password: demodemo</p>
-    <p></p>
+  <div id="work" class="nico-view">
+   
+    <div class="word_desc">
+   
+    <div class="all_work_wrapper">
+      <a name="scenicAnchor" id="scenicAnchor"></a>
+      <a href="http://scenic49.herokuapp.com/" target="_blank"><h2 class="project_title">Scenic 49</h2></a>
+      <em><span class="tools-head">Built with: </span>Ruby on Rails, HTML5, CSS3, JavaScript, Isotope.js, MapBox, AWS, Paperclip Gem</em>
+      <div class="work_pics_wrapper">
+        <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic4"><div class="text"><br><br><br>Map View with Station Markers</div></div></a>
+        <a href="http://scenic49.herokuapp.com/all_checkins" target="_blank"><div class="pic5"><div class="text"><br><br><br>All Checkins Page</div></div></a>
+        <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic6"><div class="text"><br><br><br>Mobile view</div></div></a>
+      </div>
+      <p><em>On The Road: The Scenic 49</em> is the interactive online map component of an art project conceived by Peter Foucault and Chris Treggiari. Over the course of three days the artists hiked the famous 49 Mile Scenic Drive in San Francisco and hosted interactive screenprinting stations around the city.</p>
+      <p>The artists interacted with local passersby to talk about the change in their neighborhood in exchange for art. Photos along with their thoughts were saved to the web app's database for later perusal at an art opening in March of 2014.</p>  
+      <p>This project can be cloned and reproduced for any city in the world.</p> 
+      <p></p>
 
-    <a name="wiflyAnchor" id="wiflyAnchor"></a>
-    <a href="http://wiflyinthesky.herokuapp.com" target="_blank"><h2 class="project_title">WiFly</h2></a>
-    Ruby on Rails | HTML5 | CSS3 | Bootstrap
-    <div class="work_pics_wrapper">
-      <a href="http://wiflyinthesky.herokuapp.com" target="_blank"><div class="pic7"><div class="text"><br><br><br>WiFly Main</div></div></a>
-    </div>
-    <p><em>WiFly</em> lets you to search for an airport anywhere around the world to see if it has an available WiFi signal for public consumption, if it's free or the fee to use it. Most data is crowdsourced. Currently in beta.</p>
-    <p><p>
+      <a name="bandhubAnchor" id="bandhubAnchor"></a>
+      <a href="http://bandhub.herokuapp.com/" target="_blank"><h2 class="project_title">BandHub</h2></a>
+      <em><span class="tools-head">Built with: </span>Ruby on Rails, HTML5, CSS3, JavaScript, jQuery, Devise/OmniAut, Echonest &amp; SongKick APIs</em>
+      <div class="work_pics_wrapper">
+        <a href="http://bandhub.herokuapp.com/" target="_blank"><div class="pic1"><div class="text"><br><br><br>BandHub Landing Page</div></div></a>
+        <a href="http://bandhub.herokuapp.com/" target="_blank"><div class="pic2"><div class="text"><br><br><br>Band Corral</div></div></a>
+      </div>
+      <p><em>BandHub</em> is a single page app that lets users search for and save their favorite bands to keep up with their latest news and information. The app taps two external APIs and aggregates tour data, news stories, artist-tagged blog posts and more!</p>
+      <p>Give it a whirl - Username: MusicLover 
+      <p style="padding-left:13%; margin-top:-20px">Password: demodemo</p>
+      <p></p>
 
-    <a name="moviepopAnchor" id="moviepopAnchor"></a>
-    <a style="color:black" href="http://moviepop.herokuapp.com/" target="_blank"><h2 class="project_title">MoviePop!</h2></a>
-    <p>Ruby on Rails | HTML5 | CSS3 | JavaScript | jQuery | Bootstrap | Devise | MyMovieAPI.com</p>
-    <div class="work_pics_wrapper">
-      <a href="http://moviepop.herokuapp.com/" target="_blank"><div class="pic3"><div class="text"><br><br><br>MoviePop!</div></div></a>
-    </div>
-    <p><em>MoviePop!</em> is a single page app that lets you search for, save, and check off your favorite movies "to do list-style" within a beautiful interface.</p>
-  </div>  
-  <a class="top" data-ajax="false" data-role="button" href="#top"><i class="fa fa-arrow-circle-up fa-3x up_arrow"></i></a>
-</div> <!-- for Back to Top div -->
+      <a name="wiflyAnchor" id="wiflyAnchor"></a>
+      <a href="http://wiflyinthesky.herokuapp.com" target="_blank"><h2 class="project_title">WiFly</h2></a>
+      <em><span class="tools-head">Built with: </span>Ruby on Rails , HTML5 , CSS3 , Bootstrap</em>
+      <div class="work_pics_wrapper">
+        <a href="http://wiflyinthesky.herokuapp.com" target="_blank"><div class="pic7"><div class="text"><br><br><br>WiFly Main</div></div></a>
+      </div>
+      <p><em>WiFly</em> lets you to search for an airport anywhere around the world to see if it has an available WiFi signal for public consumption, if it's free or the fee to use it. Most data is crowdsourced. Currently in beta.</p>
+      <p><p>
+
+      <a name="moviepopAnchor" id="moviepopAnchor"></a>
+      <a style="color:black" href="http://moviepop.herokuapp.com/" target="_blank"><h2 class="project_title">MoviePop!</h2></a>
+      <em><span class="tools-head">Built with: </span>Ruby on Rails, HTML5, CSS3, JavaScript, jQuery, Bootstrap, Devise, MyMovieAPI.com</em>
+      <div class="work_pics_wrapper">
+        <a href="http://moviepop.herokuapp.com/" target="_blank"><div class="pic3"><div class="text"><br><br><br>MoviePop!</div></div></a>
+      </div>
+      <p><em>MoviePop!</em> is a single page app that lets you search for, save, and check off your favorite movies "to do list-style".</p>
+      <p>Sign in - Username: MovieLover 
+      <p style="padding-left:7.5%; margin-top:-20px">Password: demodemo</p>
+    </div>  
+    <a class="top" data-ajax="false" data-role="button" href="#top"><i class="fa fa-arrow-circle-up fa-3x up_arrow"></i></a>
+  </div> <!-- for Back to Top div -->
 
 
-  <div class="work_footer">
-    <div class="work_about">
-      I appreciate you taking the time to scroll through my work section. Because these apps are the first ones I've ever built, I'm proud of them, and not a little nostalgic. Feel free to poke around.
-    </div>
-    <div class="work_contact">
-      <a style="margin-left:0" href="http://www.github.com/panicbus" target="blank"><i class="fa fa-github-alt"></i></a>&nbsp;
-      <a href="http://www.linkedin.com/in/nicocrisafulli" target="blank"><i class="fa fa-linkedin-square"></i></a>&nbsp;
-      <a href="http://www.twitter.com/10timesone" target="blank"><i class="fa fa-twitter"></i></a>&nbsp;
-      <a href="http://www.facebook.com/nicocrisafulli" target="blank"><i class="fa fa-facebook-square"></i></a>&nbsp;
-      <a href="mailto:nicocrisafulli@gmail.com" target="blank"><i class="fa fa-envelope"></i></a><br>
-      <span style="font-size:16px;letter-spacing:2px">&copy; 2014 | Oakland, California</span>
-    </div>
-  </div>  
-
-</div>
 
 <a name="aboutAnchor" id="aboutAnchor"></a>
 <div id="about" class="nico-view">
-  Ahoy hoy!
-  <p>I'm Nico, a junior web developer living in the San Francisco Bay Area and <a class="ga" href="https://generalassemb.ly/san-francisco">General Assembly</a> Web Development Immersive alumnus.</p>
-  <img src="img/portrait.jpg">
-  <p>My previous background centered around writing and marketing primarily in the travel industry but have now transitioned into web development and programming full-time.</p>
-  <p>I'm currently proficient in Ruby on Rails, JavaScript, jQuery, HTML5 and CSS3, specializing in front-end work. I'm available for full-time or freelance opportunities.</p>
+  <p>Greetings!</p>
+  <p>I'm Nico, a junior web developer proficient in JavaScript, jQuery, HTML5, CSS3 and Ruby on Rails, specializing in front-end technology with the ability to code the full stack, making web applications from the ground up. I currently reside in the beautiful San Francisco Bay Area.</p> 
+  
+      <div class="ih-item circle effect13 top_to_bottom portrait">
+        <a href="mailto:nicocrisafulli@gmail.com" target="blank">
+          <div class="img"><img src="img/portrait.png" alt="img"></div>
+          <div class="info">
+            <div class="info-back">
+              <h3>I make pretty websites</h3>
+              <p>Say hello!</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+  <p>As a <a class="ga" href="https://generalassemb.ly/san-francisco">General Assembly</a> Web Development Immersive alumnus, I'm fully trained and available for full-time or freelance opportunities.</p>
+
+  <p>I'm a big fan of "the build", making something from nothing, so to speak. I also have a deep passion for the visual arts, which is why I find front end work so exciting: you can control a person's relationship with a website, and if done well, leave them thinking about their experience even after it ends.</p>
+
+  <p>My previous life saw me employed in the travel industry, primarily writing about, promoting and selling travel. I'm excited to have realized my passion by transitioning into programming full time.</p>
   <p style="text-align: center">:::&nbsp;&nbsp;&nbsp; :::&nbsp;&nbsp;&nbsp; :::</p>
-  <p>Please take a second and check out a couple of the apps I've built and reach out if you like what you see. I'd love to hear from you.</p>
+  <p>Reach out to me via whichever medium speaks to you most strongly:</p>
   <div class="linedrop">
     <a href="mailto:nicocrisafulli@gmail.com?Subject=Work for us!">nicocrisafulli@gmail.com</a><br>
     <a href="tel:1-415-889-3434">415.889.3434</a><br>
@@ -150,11 +137,15 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
   </div>
 </div>
 
+
 <a name="resumeAnchor" id="resumeAnchor"></a>
 <div id="resume" class="nico-view">
   <div class="res_div">
     <span class="res_heading">NICO CRISAFULLI</span><br>
     Jr Front End Web Developer<br>
+    <span class="res-links">415-889-3434&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="mailto:nicocrisafulli@gmail.com?Subject=Work for us!">nicocrisafulli@gmail.com</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.linkedin.com/in/nicocrisafulli">linkedin.com/in/nicocrisafulli</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.github.com/panicbus">github.com/panicbus</a></span>
+
     <hr>
     <p class="res_heading">PROFILE</p>
     <p>Driven, hard-working tech professional with excellent communication skills and six months immersive experience working with JavaScript, jQuery and Ruby on Rails along with three years using HTML/CSS. Proven ability to multitask and meet deadlines. Thrives in fast paced environments. Good learner, eager to tackle new technologies and improve on existing skills.</p>
@@ -185,10 +176,22 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
     <p>General Assembly, Web Development Immersive, Fall 2013</p>
     <p>University of Washington, B.A. English, Cum Laude, Fall 2001</p>
   </div>
-  <p style="text-align: center">Need a copy? Please feel free to download it.</p>
-  <input type="button" class="pdf_button" value="Download Nico's Resume as a PDF" target="_blank" onClick="window.location.href='img/resume.pdf'">
-  <br><br>
+  <p style="text-align: center">Need a copy?</p>
+  <button class="pdf_button" target="_blank" onClick="window.location.href='img/resume.pdf'">Download it!</button>
+  <br>
 </div>
+
+  <div class="work_footer">
+    <div class="work_contact">
+      <a style="margin-left:0" href="http://www.github.com/panicbus" target="blank"><i class="fa fa-github-alt"></i></a>&nbsp;
+      <a href="http://www.linkedin.com/in/nicocrisafulli" target="blank"><i class="fa fa-linkedin-square"></i></a>&nbsp;
+      <a href="http://www.twitter.com/10timesone" target="blank"><i class="fa fa-twitter"></i></a>&nbsp;
+      <a href="http://www.facebook.com/nicocrisafulli" target="blank"><i class="fa fa-facebook-square"></i></a>&nbsp;
+      <a href="mailto:nicocrisafulli@gmail.com" target="blank"><i class="fa fa-envelope"></i></a><br>
+      <span style="font-size:16px;letter-spacing:2px">&copy; 2014 | Oakland, California</span>
+    </div>
+  </div>  
+
 
 </body>
 </html>
