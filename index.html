@@ -3,15 +3,14 @@
 <!-- ****************************
 Hi there, I'm flattered you're interested enough in this page to dig into the HTML & CSS. Feel free to take your time and look around. BTW, if you like any of this, "borrowing" is encouraged. Have a great day! 
 - Nico
-**************************** -->
+***************************** -->
 <head>
   <title>Nico Crisafulli Portfolio</title>
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <!-- <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script src="js/application.js" type="text/javascript"></script>
-
+  
   <link rel="stylesheet" type="text/css" href="css/application.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link href="css/ihover.css" rel="stylesheet">
@@ -62,9 +61,9 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
         <a href="http://scenic49.herokuapp.com/all_checkins" target="_blank"><div class="pic5"><div class="text"><br><br><br>All Checkins Page</div></div></a>
         <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic6"><div class="text"><br><br><br>Mobile view</div></div></a>
       </div>
-      <p><em>On The Road: The Scenic 49</em> is the interactive online map component of an art project conceived by Peter Foucault and Chris Treggiari. Over the course of three days the artists hiked the famous 49 Mile Scenic Drive in San Francisco and hosted interactive screenprinting stations around the city.</p>
-      <p>The artists interacted with local passersby to talk about the change in their neighborhood in exchange for art. Photos along with their thoughts were saved to the web app's database for later perusal at an art opening in March of 2014.</p>  
-      <p>This project can be cloned and reproduced for any city in the world.</p> 
+      <p><em>On The Road: The Scenic 49</em> is the interactive online map component of an art project developed by Peter Foucault and Chris Treggiari. Over three days the artists hiked the famous 49 Mile Scenic Drive in San Francisco hosting interactive screenprinting stations around the city.</p>
+      <p>The app uses the MapBox API for the mapping functionality, Amazon AWS for photo storage, and the Paperclip Ruby Gem for photo uploading protocol.</p>   
+      <p>This project can be cloned and reproduced for any city in the world. Please feel free to <a href="https://github.com/panicbus/scenic_49">fork it</a>.</p> 
       <p></p>
 
       <a name="bandhubAnchor" id="bandhubAnchor"></a>
@@ -74,7 +73,7 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
         <a href="http://bandhub.herokuapp.com/" target="_blank"><div class="pic1"><div class="text"><br><br><br>BandHub Landing Page</div></div></a>
         <a href="http://bandhub.herokuapp.com/" target="_blank"><div class="pic2"><div class="text"><br><br><br>Band Corral</div></div></a>
       </div>
-      <p><em>BandHub</em> is a single page app that lets users search for and save their favorite bands to keep up with their latest news and information. The app taps two external APIs and aggregates tour data, news stories, artist-tagged blog posts and more!</p>
+      <p><em>BandHub</em> is a single page app that lets users search for and save their favorite bands to keep up with their latest news and information. The app taps two external APIs to aggregate tour data, artist featured news stories, tagged blog posts and more!</p>
       <p>Give it a whirl - Username: MusicLover 
       <p style="padding-left:13%; margin-top:-20px">Password: demodemo</p>
       <p></p>
@@ -85,7 +84,8 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
       <div class="work_pics_wrapper">
         <a href="http://wiflyinthesky.herokuapp.com" target="_blank"><div class="pic7"><div class="text"><br><br><br>WiFly Main</div></div></a>
       </div>
-      <p><em>WiFly</em> lets you to search for an airport anywhere around the world to see if it has an available WiFi signal for public consumption, if it's free or the fee to use it. Most data is crowdsourced. Currently in beta.</p>
+      <p><em>WiFly</em> lets you to search for airports anywhere around the world to determine whether they have an available WiFi signal for public Internet use, if the signal is free or the fee to use it. Most data is crowdsourced. Currently in beta.</p>
+      <p>The Bootstrap CSS framework is in use here, on top of a Ruby on Rails baselayer. A map feature is being developed for version 2.0.</p> 
       <p><p>
 
       <a name="moviepopAnchor" id="moviepopAnchor"></a>
@@ -95,12 +95,13 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
         <a href="http://moviepop.herokuapp.com/" target="_blank"><div class="pic3"><div class="text"><br><br><br>MoviePop!</div></div></a>
       </div>
       <p><em>MoviePop!</em> is a single page app that lets you search for, save, and check off your favorite movies "to do list-style".</p>
+      <p>App uses a significant amount of jQuery for its interactions and the Devise Ruby Gem for the login feature.</p>
       <p>Sign in - Username: MovieLover 
       <p style="padding-left:7.5%; margin-top:-20px">Password: demodemo</p>
     </div>  
     <a class="top" data-ajax="false" data-role="button" href="#top"><i class="fa fa-arrow-circle-up fa-3x up_arrow"></i></a>
   </div> <!-- for Back to Top div -->
-
+</div>
 
 
 <a name="aboutAnchor" id="aboutAnchor"></a>
@@ -143,8 +144,14 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
   <div class="res_div">
     <span class="res_heading">NICO CRISAFULLI</span><br>
     Jr Front End Web Developer<br>
-    <span class="res-links">415-889-3434&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="mailto:nicocrisafulli@gmail.com?Subject=Work for us!">nicocrisafulli@gmail.com</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.linkedin.com/in/nicocrisafulli">linkedin.com/in/nicocrisafulli</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.github.com/panicbus">github.com/panicbus</a></span>
+    <div class="res-links-container">
+      <div class="res-links">
+        415-889-3434&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="mailto:nicocrisafulli@gmail.com?Subject=Work for us!">nicocrisafulli@gmail.com</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="http://www.linkedin.com/in/nicocrisafulli">linkedin.com/in/nicocrisafulli</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="http://www.github.com/panicbus">github.com/panicbus</a>
+      </div>
+    </div>
 
     <hr>
     <p class="res_heading">PROFILE</p>
@@ -167,6 +174,8 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
     <p class="res_heading">WORK EXPERIENCE</p>
     <p class="res_subheading">General Assembly - Web Development Immersive, Sept 2013 - Dec 2013</p>
     <p>Member of General Assembly's Web Development Immersive 3-month intensive coding program September 2013 cohort, promoting fluency in Ruby on Rails and JavaScript with a detailed focus on creating production grade web apps. Students spent 10+ hours per day learning and writing code, working independently and in teams using a variety of technologies.</p>
+    <p class="res_subheading">Airbnb - Copywriter/Blogger/Content Creator, Feb 2014 - Present</p>
+    <p>Freelance contractor in charge of creating content for the Airbnb blog, Facebook and Twitter accounts. Copywriting for email and general marketing campaigns. Attending and contributing to pitch meetings for the Airbnb editorial calendar.</p>
     <p class="res_subheading">AirTreks - Social Media Manager/Marketer/Blog Editor, Jul 2009 - Sept 2013</p>
     <p>Editor/writer for company blog. Oversaw SEO optimization on all AirTreks web properties, content creation, copywriting for corporate website. Marketing strategist. Launched and administered company social media and content marketing program.</p>
     <p class="res_subheading">AirTreks - Personal Travel Consultant/Sales, Jun 2006 - Jul 2009</p>

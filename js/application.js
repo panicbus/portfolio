@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  // for persistent tab colors on click
   var hoverLink = function(link) {
     $('.view-options').removeClass('current');
     $(link).addClass('current');
@@ -7,7 +8,7 @@ $(document).ready(function(){
 
   // default to #work
   $('#work-link').addClass('current');
-  $('#work').show();
+  // $('#work').show();
  
 
   $('body').on('click',".about", function(event) { 
@@ -24,8 +25,7 @@ $(document).ready(function(){
 
   $('.up_arrow').hide();
   
-
-  // for banner and arrow fades
+  // for arrow fades
   $(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y <= 100){
@@ -39,28 +39,31 @@ $(document).ready(function(){
     }
   });
 
-  // for current tab changes
+  // specifying scroll anchors 
   $(document).scroll(function(){
     var pageScroll = $(this).scrollTop();
-   
-    if (pageScroll <= 1985 ) {
+    var aboutScroll = $('#aboutAnchor').offset().top - 100;
+    var resumeScroll = $('#resumeAnchor').offset().top - 100;
+
+    if (pageScroll <= aboutScroll ) {
       $('.view-options').removeClass('current');
       $('.work').addClass('current');
     }
-    if (pageScroll > 1985 && pageScroll <= 2921 ) {
+    if (pageScroll > aboutScroll && pageScroll <= resumeScroll ) {
       $('.view-options').removeClass('current');
       $('.about').addClass('current');
     }
-    if (pageScroll > 2921 ) {
+    if (pageScroll > resumeScroll ) {
       $('.view-options').removeClass('current');
       $('.resume').addClass('current');
     }
   })
 
 
+  //for scrolling to anchor tags in body
   $('a').click(function(){
       $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top //scrolls to anchor tag in body
+        scrollTop: $( $(this).attr('href') ).offset().top 
       }, 'slow' );
       return false;
   });
