@@ -88,6 +88,14 @@ a:link, a:visited, a:active, h1:hover {
   color: #ECF0F1;
 }
 
+.fork-it {
+  color: #084c8d !important;
+}
+
+.fork-it:hover {
+  color: darkblue !important;
+}
+
 .links {
   font-size: 23px;
   text-align: center;
@@ -184,7 +192,21 @@ a:link, a:visited, a:active, h1:hover {
 .pic7 {
   background: url('../img/wifly1.png');
 }
-.pic1, .pic2, .pic3, .pic4, .pic5, .pic7 {
+.pic8 {
+  background: url('../img/oncamera1.png');
+}
+.pic9 {
+  background: url('../img/oncamera2.png');
+}
+.pic10 {
+  background: url('../img/oncamera3.png');
+  width: 150px;
+  height: 217px;
+  margin: 15px;
+  background-size: cover;
+  float: left;
+}
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic7, .pic8, .pic9 {
   width: 459px;
   height: 217px;
   margin: 15px;
@@ -282,6 +304,14 @@ a:link, a:visited, a:active, h1:hover {
 .all_work_wrapper h2 {
   margin-bottom: 10px;
 }
+
+/*//// for carousel ////////////////////////////////////*/
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 .ga:hover {
   color: #2F41CC;

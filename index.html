@@ -10,10 +10,13 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script src="js/application.js" type="text/javascript"></script>
+  <script src="owl-carousel/owl.carousel.js"></script>
   
   <link rel="stylesheet" type="text/css" href="css/application.css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/ihover.css" rel="stylesheet">
+  <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+  <link href="owl-carousel/owl.theme.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Raleway|Nixie+One' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
@@ -54,16 +57,37 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
    
     <div class="all_work_wrapper">
       <a name="scenicAnchor" id="scenicAnchor"></a>
-      <a href="http://scenic49.herokuapp.com/" target="_blank"><h2 class="project_title">Scenic 49</h2></a>
-      <em><span class="tools-head">Built with: </span>Ruby on Rails, HTML5, CSS3, JavaScript, Isotope.js, MapBox, AWS, Paperclip Gem</em>
-      <div class="work_pics_wrapper">
-        <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic4"><div class="text"><br><br><br>Map View with Station Markers</div></div></a>
-        <a href="http://scenic49.herokuapp.com/all_checkins" target="_blank"><div class="pic5"><div class="text"><br><br><br>All Checkins Page</div></div></a>
-        <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic6"><div class="text"><br><br><br>Mobile view</div></div></a>
-      </div>
-      <p><em>On The Road: The Scenic 49</em> is the interactive online map component of an art project developed by Peter Foucault and Chris Treggiari. Over three days the artists hiked the famous 49 Mile Scenic Drive in San Francisco hosting interactive screenprinting stations around the city.</p>
-      <p>The app uses the MapBox API for the mapping functionality, Amazon AWS for photo storage, and the Paperclip Ruby Gem for photo uploading protocol.</p>   
-      <p>This project can be cloned and reproduced for any city in the world. Please feel free to <a href="https://github.com/panicbus/scenic_49">fork it</a>.</p> 
+      
+      <div id="owl-demo" class="owl-carousel owl-theme">
+ 
+        <div class="item"><!-- for S49 Owl carousel item -->
+      
+          <a href="http://scenic49.herokuapp.com/" target="_blank"><h2 class="project_title">Scenic 49</h2></a>
+          <em><span class="tools-head">Built with: </span>Ruby on Rails, HTML5, CSS3, JavaScript, Isotope.js, MapBox, AWS, Paperclip Gem</em>
+          <div class="work_pics_wrapper">
+            <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic4"><div class="text"><br><br><br>Map View with Station Markers</div></div></a>
+            <a href="http://scenic49.herokuapp.com/all_checkins" target="_blank"><div class="pic5"><div class="text"><br><br><br>All Checkins Page</div></div></a>
+            <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic6"><div class="text"><br><br><br>Mobile view</div></div></a>
+          </div>
+          <p><em>On The Road: The Scenic 49</em> is the interactive online map component of an <a href="http://peterfoucault.wordpress.com/2014/03/22/map-installation-on-the-road-at-alter-space-gallery-in-sf-on-saturday-march-15th-from-7-10-pm/" class="fork-it">art project</a> developed by Peter Foucault and Chris Treggiari.</p>
+          <p>The app uses the MapBox API for the mapping functionality, Amazon Web Services for photo storage, and the Paperclip Ruby Gem for the photo uploading protocol.</p>   
+          <p>This project can be cloned and reproduced for any city in the world (click 'next' below). Feel free to head over to Github and <a href="https://github.com/panicbus/scenic_49" class="fork-it">fork it</a>.
+        </div> <!-- end 1st owl carousel slide -->
+      
+        <div class="item">  <!-- for On Camera Owl carousel item -->
+          <a href="http://oncamera.herokuapp.com/" target="_blank"><h2 class="project_title">On Camera</h2></a>
+          <em><span class="tools-head">Built with: </span>Ruby on Rails, HTML5, CSS3, JavaScript, Isotope.js, MapBox, AWS, Paperclip Gem</em>
+          <div class="work_pics_wrapper">
+            <a href="http://oncamera.herokuapp.com/" target="_blank"><div class="pic8"><div class="text"><br><br><br>Map View with Location Markers</div></div></a>
+            <a href="http://oncamera.herokuapp.com/all_checkins" target="_blank"><div class="pic9"><div class="text"><br><br><br>All Checkins Page</div></div></a>
+            <a href="http://oncamera.herokuapp.com/" target="_blank"><div class="pic10"><div class="text"><br><br><br>Mobile splash view</div></div></a>
+          </div>
+          <p><em>On Camera: The Watchmen</em> is a cloned iteration of the Scenic 49 project, the interactive online map for another <a href="http://peterfoucault.wordpress.com/2014/06/05/peter-foucault-map-project-at-torrance-art-museum-in-the-watchmen-exhibition/" class="fork-it">Peter Foucault and Chris Treggiari project</a>.</p>
+          <p>This version uses the exact techonology as the Scenic 49 version, only having changed the map and using new GeoJson data for each location.</p>   
+          <p>This project is also open-source and available <a href="https://github.com/panicbus/on_camera" class="fork-it">to be forked</a>. It should less than 1 hour to convert to any city of your choosing.      
+        </div>
+
+      </div> <!-- end Owl carousel -->
       <p></p>
 
       <a name="bandhubAnchor" id="bandhubAnchor"></a>
@@ -75,7 +99,7 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
       </div>
       <p><em>BandHub</em> is a single page app that lets users search for and save their favorite bands to keep up with their latest news and information. The app taps two external APIs to aggregate tour data, artist featured news stories, tagged blog posts and more!</p>
       <p>Give it a whirl - Username: MusicLover 
-      <p style="padding-left:13%; margin-top:-20px">Password: demodemo</p>
+      <p style="padding-left:13.5%; margin-top:-20px">Password: demodemo</p>
       <p></p>
 
       <a name="wiflyAnchor" id="wiflyAnchor"></a>
@@ -114,7 +138,7 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
           <div class="img"><img src="img/portrait.png" alt="img"></div>
           <div class="info">
             <div class="info-back">
-              <h3>I make pretty websites</h3>
+              <h3>I build websites</h3>
               <p>Say hello!</p>
             </div>
           </div>
