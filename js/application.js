@@ -8,7 +8,6 @@ $(document).ready(function(){
 
   // default to #work
   $('#work-link').addClass('current');
-  // $('#work').show();
  
 
   $('body').on('click',".about", function(event) { 
@@ -41,31 +40,47 @@ $(document).ready(function(){
 
   // specifying scroll anchors 
   $(document).scroll(function(){
-    var pageScroll = $(this).scrollTop();
-    var aboutScroll = $('#aboutAnchor').offset().top - 100;
-    var resumeScroll = $('#resumeAnchor').offset().top - 100;
 
-    if (pageScroll <= aboutScroll ) {
-      $('.view-options').removeClass('current');
-      $('.work').addClass('current');
-    }
-    if (pageScroll > aboutScroll && pageScroll <= resumeScroll ) {
-      $('.view-options').removeClass('current');
-      $('.about').addClass('current');
-    }
-    if (pageScroll > resumeScroll ) {
-      $('.view-options').removeClass('current');
-      $('.resume').addClass('current');
-    }
+      var pageScroll = $(this).scrollTop();
+      var aboutScroll = $('#aboutAnchor').offset().top - 100;
+      var resumeScroll = $('#resumeAnchor').offset().top - 100;
+
+      if (pageScroll <= aboutScroll ) {
+        $('.view-options').removeClass('current');
+        $('.work').addClass('current');
+      }
+      if (pageScroll > aboutScroll && pageScroll <= resumeScroll ) {
+        $('.view-options').removeClass('current');
+        $('.about').addClass('current');
+      }
+      if (pageScroll > resumeScroll ) {
+        $('.view-options').removeClass('current');
+        $('.resume').addClass('current');
+      }
+
   })
 
 
   //for scrolling to anchor tags in body
   $('a').click(function(){
+
+    var aboutScroll = $('#aboutAnchor').offset().top - 50;
+
+    if ($(window).width() < 900) {
+
       $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top 
+        scrollTop: $( $(this).attr('href') ).offset().top
       }, 'slow' );
       return false;
+    
+    } else {
+
+      $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top -20
+      }, 'slow' );
+      return false;
+
+    }
   });
 
 

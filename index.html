@@ -5,6 +5,8 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
 - Nico
 ***************************** -->
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Nico Crisafulli Portfolio</title>
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   
@@ -19,6 +21,11 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
   <link href="owl-carousel/owl.theme.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Raleway|Nixie+One' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
   <!-- Google analytics -->
   <script>
@@ -41,12 +48,19 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
 </div>
   <!-- end topnav -->
 
-<div class="links">
-  <a href="#workAnchor"><li id="work-link" class="work view-options">Projects</li></a>
-  <a href="#aboutAnchor"><li id="about-link" class="about view-options">About</li></a>
-  <a href="#resumeAnchor"><li id="resume-link" class="resume view-options">Resume</li></a>
+<div class="row">
+  <div class="links">
+    <div class="col-md-4">
+      <a href="#workAnchor"><li id="work-link" class="work view-options">Projects</li></a>
+    </div>
+    <div class="col-md-4">
+      <a href="#aboutAnchor"><li id="about-link" class="about view-options">About</li></a>
+    </div>
+    <div class="col-md-4">
+      <a href="#resumeAnchor"><li id="resume-link" class="resume view-options">Resume</li></a>
+    </div>
+  </div>
 </div>
-
 <div data-role="content" id="top">
 
   <a name="workAnchor" id="workAnchor"></a>
@@ -68,7 +82,7 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
             <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic4"><div class="text"><br><br><br>Map View with Station Markers</div></div></a>
             <a href="http://scenic49.herokuapp.com/all_checkins" target="_blank"><div class="pic5"><div class="text"><br><br><br>All Checkins Page</div></div></a>
             <a href="http://scenic49.herokuapp.com/" target="_blank"><div class="pic6"><div class="text"><br><br><br>Mobile view</div></div></a>
-          </div>
+          </div><br>
           <p><em>On The Road: The Scenic 49</em> is the interactive online map component of an <a href="http://peterfoucault.wordpress.com/2014/03/22/map-installation-on-the-road-at-alter-space-gallery-in-sf-on-saturday-march-15th-from-7-10-pm/" class="fork-it">art project</a> developed by Peter Foucault and Chris Treggiari.</p>
           <p>The app uses the MapBox API for the mapping functionality, Amazon Web Services for photo storage, and the Paperclip Ruby Gem for the photo uploading protocol.</p>   
           <p>This project can be cloned and reproduced for any city in the world (click 'next' below). Feel free to head over to Github and <a href="https://github.com/panicbus/scenic_49" class="fork-it">fork it</a>.
@@ -81,7 +95,7 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
             <a href="http://oncamera.herokuapp.com/" target="_blank"><div class="pic8"><div class="text"><br><br><br>Map View with Location Markers</div></div></a>
             <a href="http://oncamera.herokuapp.com/all_checkins" target="_blank"><div class="pic9"><div class="text"><br><br><br>All Checkins Page</div></div></a>
             <a href="http://oncamera.herokuapp.com/" target="_blank"><div class="pic10"><div class="text"><br><br><br>Mobile splash view</div></div></a>
-          </div>
+          </div><br>
           <p><em>On Camera: The Watchmen</em> is a cloned iteration of the Scenic 49 project, the interactive online map for another <a href="http://peterfoucault.wordpress.com/2014/06/05/peter-foucault-map-project-at-torrance-art-museum-in-the-watchmen-exhibition/" class="fork-it">Peter Foucault and Chris Treggiari project</a>.</p>
           <p>This version uses the exact techonology as the Scenic 49 version, only having changed the map and using new GeoJson data for each location.</p>   
           <p>This project is also open-source and available <a href="https://github.com/panicbus/on_camera" class="fork-it">to be forked</a>. It should less than 1 hour to convert to any city of your choosing.      
@@ -93,10 +107,18 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
       <a name="bandhubAnchor" id="bandhubAnchor"></a>
       <a href="http://bandhub.herokuapp.com/" target="_blank"><h2 class="project_title">BandHub</h2></a>
       <em><span class="tools-head">Built with: </span>Ruby on Rails, HTML5, CSS3, JavaScript, jQuery, Devise/OmniAut, Echonest &amp; SongKick APIs</em>
-      <div class="work_pics_wrapper">
-        <a href="http://bandhub.herokuapp.com/" target="_blank"><div class="pic1"><div class="text"><br><br><br>BandHub Landing Page</div></div></a>
-        <a href="http://bandhub.herokuapp.com/" target="_blank"><div class="pic2"><div class="text"><br><br><br>Band Corral</div></div></a>
+
+      <div class="row">
+        <div class="work_pics_wrapper">
+          <div class="col-md-6">
+            <a href="http://bandhub.herokuapp.com/" target="_blank"><div class="pic1"><div class="text"><br><br><br>BandHub Landing Page</div></div></a>
+          </div>
+          <div class="col-md-6">
+            <a href="http://bandhub.herokuapp.com/" target="_blank"><div class="pic2"><div class="text"><br><br><br>Band Corral</div></div></a>
+          </div>
+        </div>
       </div>
+
       <p><em>BandHub</em> is a single page app that lets users search for and save their favorite bands to keep up with their latest news and information. The app taps two external APIs to aggregate tour data, artist featured news stories, tagged blog posts and more!</p>
       <p>Give it a whirl - Username: MusicLover 
       <p style="padding-left:13.5%; margin-top:-20px">Password: demodemo</p>
@@ -209,8 +231,9 @@ Hi there, I'm flattered you're interested enough in this page to dig into the HT
     <p>General Assembly, Web Development Immersive, Fall 2013</p>
     <p>University of Washington, B.A. English, Cum Laude, Fall 2001</p>
   </div>
-  <p style="text-align: center">Need a copy?</p>
-  <button class="pdf_button" target="_blank" onClick="window.location.href='img/resume.pdf'">Download it!</button>
+  <p style="text-align:center;margin-top: 10px">Need a copy?</p>
+
+  <button type="button" class="btn btn-primary btn-lg pdf-btn" target="_blank" onClick="window.location.href='img/resume.pdf'">Download it!</button>
   <br>
 </div>
 
