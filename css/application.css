@@ -168,50 +168,61 @@ a:link, a:visited, a:active, h1:hover {
 /*for pic hover transition*/
 .pic1 {
   background: url('../img/bandhub1.png');
+  height: 225px !important; 
 }
 .pic2 {
   background: url('../img/bandhub2.png');
+  height: 225px !important;
 }
 .pic3 {
   background: url('../img/moviepop.png');
+  height: 240px !important;
 }
 .pic4 {
   background: url('../img/scenic1.png');
+  height: 229px !important;
 }
 .pic5 {
   background: url('../img/scenic2.png');
+  height: 229px !important;
 }
 .pic6 {
   background: url('../img/scenic3.png');
   width: 150px;
-  height: 217px;
-  margin: 15px;
+  height: 313px;
   background-size: cover;
   float: left;
+  padding: 0 !important;
+  margin: 5px 15px 0 15px !important;
 }
 .pic7 {
   background: url('../img/wifly1.png');
+  height: 240px !important;
 }
 .pic8 {
   background: url('../img/oncamera1.png');
+  height: 229px !important;
+  margin-left: 0 !important;
 }
 .pic9 {
   background: url('../img/oncamera2.png');
+  height: 229px !important;
 }
 .pic10 {
   background: url('../img/oncamera3.png');
   width: 150px;
-  height: 217px;
-  margin: 15px;
+  height: 300px;
   background-size: cover;
   float: left;
+  margin: 10px 15px 0 0 !important;
+  padding: 0 !important;
 }
 .pic1, .pic2, .pic3, .pic4, .pic5, .pic7, .pic8, .pic9 {
   width: 459px;
-  height: 217px;
   margin: 15px;
   background-size: cover;
   float: left; 
+  padding: 0 !important;
 }
 
 .work_pics_wrapper {
@@ -306,7 +317,7 @@ a:link, a:visited, a:active, h1:hover {
 }
 
 /*//// for carousel ////////////////////////////////////*/
-#owl-demo .item img{
+#owl .item img{
     display: block;
     width: 100%;
     height: auto;
@@ -378,10 +389,9 @@ a:link, a:visited, a:active, h1:hover {
   width: 200px;
 }
 
-
-#about .portrait {
+.portrait-container {
   float: right;
-} 
+}
 
 #about img {
   width: 250px;
@@ -412,15 +422,6 @@ a:link, a:visited, a:active, h1:hover {
     margin: 56px 0 0 0;
   }
 
-  /*.links li {
-    float: left;
-    clear: left;
-    text-align: left;
-    font-size: 20px;
-    color: #fff;
-    padding: 20px 0 15px 20px;
-  }*/
-
   #about, #work, #resume {
     float: none;
     max-width: 100%;
@@ -448,15 +449,18 @@ a:link, a:visited, a:active, h1:hover {
     margin: 10px 0px 0px 0px;
   }
 
-}
-
-@media (max-width: 850px) {
-  
+  .portrait-container {
+    width: 100%;
+    float: none;
+    display: inline-block;
+  }
+  .portrait {
+    margin: 5px auto;
+  }
 
 }
 
 @media (max-width: 480px) {
-
 
   .nameDiv {
     font-size: 28px;
@@ -464,9 +468,9 @@ a:link, a:visited, a:active, h1:hover {
     display: block;
   }
   
-  /*.links {
+  .links {
     display: none;
-  }*/
+  }
 
   #about, #work, #resume {
     font-size: 21px;
@@ -493,12 +497,8 @@ a:link, a:visited, a:active, h1:hover {
   }
 
   #about img {
-    display: block;
+    /*display: block;*/
     clear: both;
-  }
-
-  .portrait {
-    width: 100%;
   }
 
   .res_div {
@@ -515,12 +515,8 @@ a:link, a:visited, a:active, h1:hover {
 
   .up_arrow {
     top: 88%;
-    left: 87%;
+    left: 85%;
   }
 
 }
-
-
-
-
 
